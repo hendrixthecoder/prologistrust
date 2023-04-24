@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\Auth\LoginController;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use App\Http\Controllers\Admin\Auth\ResetPasswordController;
 use App\Http\Controllers\Admin\Auth\ForgotPasswordController;
+use App\Http\Controllers\LocalizationController;
 use App\Models\Deposit;
 
 /*
@@ -72,6 +73,8 @@ Route::get('/withlimit/reset', ['App\Http\Controllers\Admin\PlansController', 'r
 //  <------------------- User Routes ----------------->
 Route::group(['middleware' => ['auth', 'verified']],function () {
     Route::get('/user/dashboard', ['App\Http\Controllers\DashboardController', 'dashboard']);
+
+    Route::get('user/{locale}', [LocalizationController::class, 'setLocale'])->name('setUserLocale');
 
 
     Route::get('/user/profile', ['App\Http\Controllers\UserController', 'profile'])->name('user.profile');

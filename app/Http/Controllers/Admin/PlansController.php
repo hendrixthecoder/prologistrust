@@ -19,7 +19,6 @@ use Illuminate\Support\Facades\Validator;
 
 class PlansController extends Controller
 {
-
     
     public function user_plans()
     {

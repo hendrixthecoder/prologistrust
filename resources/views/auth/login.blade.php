@@ -45,6 +45,7 @@
             background-color: transparent;
             /*background-color: #17548d;*/ /*#e3e3ff*/
         }
+        
 
         div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value:hover {
             text-decoration: none;
@@ -96,7 +97,7 @@
     </style>
     <!-- Google Translate Element end -->
 </head>
-<div id="google_translate_element" class="uk-input uk-border-rounded" style="color:black;"></div>
+<div id="google_translate_element" class="uk-input uk-border-rounded " style="color:black;"></div>
 <body>
     <!-- preloader begin -->
     <div class="in-loader">
@@ -121,7 +122,7 @@
                                         <img class="uk-margin-small-right in-offset-top-10" src="{{asset('front/img/logo-2.png')}}" data-src="{{asset('front/img/logo.png')}}" alt="logo" width="150" height="50">
                                     </a>
                                     <!-- module logo begin -->
-                                    <p class="uk-text-lead uk-margin-top uk-margin-remove-bottom">Log into your account</p>
+                                    <p class="uk-text-lead uk-margin-top uk-margin-remove-bottom">{{ __('Log into your account') }}</p>
                                     <p class="uk-text-small uk-margin-remove-top uk-margin-medium-bottom"> Don't have an account? <a href="{{ route('register') }}">Register here</a></p>
                                   
                                        

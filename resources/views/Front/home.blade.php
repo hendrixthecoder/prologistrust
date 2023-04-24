@@ -103,7 +103,7 @@
 			<div class="container">
 				<div class="row" style="z-index: 8; color:#fff; font-weight:bold;">
 					<div class="col-md-12 text-center parallax-fade-top">
-						<h1 style="color:#f5f5f5;">PROLOGIS <br><span class="txt-type" data-wait="3000" data-words='["(Ahead of Whats Next)"]'>(Ahead of What's Next)</span></h1>
+						<h1 style="color:#f5f5f5;">PROLOGISTRUST <br><span class="txt-type" data-wait="3000" data-words='["(Ahead of Whats Next)"]'>(Ahead of What's Next)</span></h1>
 					</div>
                     <div class="col-md-12 text-center mb-1 parallax-fade-top">
 						<p>We are here to offer you the best because your success is our success.</p>
