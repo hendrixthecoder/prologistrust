@@ -45,6 +45,7 @@
             background-color: transparent;
             /*background-color: #17548d;*/ /*#e3e3ff*/
         }
+
         
 
         div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value:hover {
