@@ -123,7 +123,7 @@
                                         <img class="uk-margin-small-right in-offset-top-10" src="{{asset('front/img/logo-2.png')}}" data-src="{{asset('front/img/logo.png')}}" alt="logo" width="150" height="50">
                                     </a>
                                     <!-- module logo begin -->
-                                    <p class="uk-text-lead uk-margin-top uk-margin-remove-bottom">{{ __('Log into your account') }}</p>
+                                    <p class="uk-text-lead uk-margin-top uk-margin-remove-bottom">@lang('text.loginAccount')</p>
                                     <p class="uk-text-small uk-margin-remove-top uk-margin-medium-bottom"> Don't have an account? <a href="{{ route('register') }}">Register here</a></p>
                                   
                                        

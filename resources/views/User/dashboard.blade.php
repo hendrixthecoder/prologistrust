@@ -37,7 +37,7 @@
 								</div>
 								<div class="">
 									<p class="w">${{$total_capital}}</p>
-									<h5 class="">Total Capital</h5>
+									<h5 class="">@lang('text.totCap')</h5>
 								</div>
 							</div>
 						</div>
