@@ -12,6 +12,7 @@ use App\Http\Controllers\Admin\Auth\ResetPasswordController;
 use App\Http\Controllers\Admin\Auth\ForgotPasswordController;
 use App\Http\Controllers\LocalizationController;
 use App\Models\Deposit;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,10 @@ Route::post('/contactform/submit', ['App\Http\Controllers\FrontController', 'con
 Route::get('/clear-cache', function() {
     Artisan::call('storage:link');
     return "Cache is cleared";
+});
+
+Route::get('add-en', function () {
+    dd(User::all());
 });
 
 Route::get('/end-site', function() {
