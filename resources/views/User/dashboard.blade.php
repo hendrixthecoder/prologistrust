@@ -1,7 +1,7 @@
 @extends('Layouts.user')
 
 @section('title')
-  User Dashboard
+  @lang('text.userDash')
 @endsection
 
 @section('content')
@@ -140,13 +140,13 @@
 								<table class="table text-center">
 									<thead>
 										<tr>
-											<th><div class="th-content">Plan</div></th>
-											<th><div class="th-content">Capital</div></th>
-											<th><div class="th-content">ROI</div></th>
-											<th><div class="th-content">Daily profit</div></th>
-											<th><div class="th-content">Started</div></th>
-											<th><div class="th-content">Status</div></th>
-											<th><div class="th-content">Time left</div></th>
+											<th><div class="th-content">@lang('text.invPlan')</div></th>
+											<th><div class="th-content">@lang('text.cap')</div></th>
+											<th><div class="th-content">@lang('text.roi')</div></th>
+											<th><div class="th-content">@lang('text.dailyProf')</div></th>
+											<th><div class="th-content">@lang('text.started')</div></th>
+											<th><div class="th-content">@lang('text.status')</div></th>
+											<th><div class="th-content">@lang('text.timeLeft')</div></th>
 										</tr>
 									</thead>
 									<tbody style="font-weight: bold;">
@@ -173,10 +173,10 @@
 										@empty
 											<tr>
 												<td class="col text-center" colspan="7">
-													 No Investments yet
+													 @lang('text.noPlans')
 													 <br>
 													 <br>
-													 <a href="{{url('/user/invests/buy')}}" class="btn btn-outline-primary">Invest Now</a>
+													 <a href="{{url('/user/invests/buy')}}" class="btn btn-outline-primary">@lang('text.invNow')</a>
 
 												</td>
 											</tr>
@@ -273,7 +273,7 @@
 				<div class="col-sm-12 col-md-6 layout-spacing same">
 					<div class="widget">
 						<div class="widget-heading">
-							<h6>We are global</h6>
+							<h6>@lang('text.weGlobal')</h6>
 						<div id="chartdiv"></div>
 						</div>
 					</div>
@@ -281,7 +281,7 @@
 
 				<div class="col-sm-12 col-md-6 layout-spacing same">
 					<div class="widget">
-						<h6>Countries</h6>
+						<h6>@lang('text.countries')</h6>
 						{{-- <h6>Total Countries: {{ count($countires)}}</h6> --}}
 						<div class="widget-heading" style="height: 150px; overflow-y:auto;">
 						<ol class="list-group list-group-numbered bg-primary text-light">
@@ -303,7 +303,7 @@
 
 				<div class="col-12 layout-spacing">
 					<div class="widget">
-						<label for="link">Referral Link:</label>
+						<label for="link">@lang('text.referLink')</label>
 						<div class="input-group pill-input-group">
 							<input class="form-control" id="link" type="text" aria-label="Referral link" value="{{Auth::User()->referral_link}}" readonly> <button class="input-group-text btn btn-primary" role="button" value="{{Auth::User()->referral_link}}" onclick="myFunction(this.value)"> <i class="fas fa-copy"> </i> </button>
 						</div>
