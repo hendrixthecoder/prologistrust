@@ -78,7 +78,6 @@ Route::group(['middleware' => ['auth', 'verified']],function () {
 
     Route::get('user/lang/{locale}', [LocalizationController::class, 'setLocale'])->name('setUserLocale');
 
-
     Route::get('/user/profile', ['App\Http\Controllers\UserController', 'profile'])->name('user.profile');
     Route::put('/user/updatepersonal/{id}', ['App\Http\Controllers\UserController', 'updatepersonal']);
     Route::put('/user/updateppic/{id}', ['App\Http\Controllers\UserController', 'updateppic']);

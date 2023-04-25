@@ -20,15 +20,15 @@ class LocalizationMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        // if(Auth::check()){
-        //     if(Auth::user()->locale){
-        //         App::setLocale(Auth::user()->locale);
-        //     }else {
-        //         App::setLocale('en');
-        //     }
-        // }elseif(Session::has('locale') && array_key_exists(Session::get('locale'), Config::get('languages'))){
-        //     App::setLocale(Session::get('locale'));
-        // }
+        if(Auth::check()){
+            if(Auth::user()->locale){
+                App::setLocale(Auth::user()->locale);
+            }else {
+                App::setLocale('en');
+            }
+        }elseif(Session::has('locale') && array_key_exists(Session::get('locale'), Config::get('languages'))){
+            App::setLocale(Session::get('locale'));
+        }
 
         return $next($request);
     }

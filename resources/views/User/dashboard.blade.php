@@ -53,7 +53,7 @@
 								</div>
 								<div class="">
 									<p class="w">${{Auth::User()->profit}}</p>
-									<h5 class="">Profit</h5>
+									<h5 class="">@lang('text.profit')</h5>
 								</div>
 							</div>
 						</div>
@@ -68,7 +68,7 @@
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-gift"><polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg></div>
 								<div class="">
 									<p class="w">${{sprintf('%.2f', Auth::User()->bonus)}}</p>
-									<h5 class="">Referral Bonus</h5>
+									<h5 class="">@lang('text.referBonus')</h5>
 								</div>
 							</div>
 						</div>
@@ -84,7 +84,7 @@
 								</div>
 								<div class="">
 									<p class="w">{{ count(Auth::user()->referrals)  ?? '0' }}</p>
-									<h5 class="">Referral count</h5>
+									<h5 class="">@lang('text.referCount')</h5>
 								</div>
 							</div>
 						</div>
@@ -100,7 +100,7 @@
 								</div>
 								<div class="">
 									<p class="w">{{count($investments)}}</p>
-									<h5 class="">Total investments</h5>
+									<h5 class="">@lang('text.totInv')</h5>
 								</div>
 							</div>
 						</div>
@@ -116,7 +116,7 @@
 								</div>
 								<div class="">
 									<p class="w">${{$total_withdraw}}</p>
-									<h5 class="">Total Withdraws</h5>
+									<h5 class="">@lang('text.totWitd')</h5>
 								</div>
 							</div>
 						</div>
@@ -132,7 +132,7 @@
 					<div class="widget widget-table-two">
 
 						<div class="widget-heading">
-							<h5 class="">Active Investments</h5>
+							<h5 class="">@lang('text.actInv')</h5>
 						</div>
 
 						<div class="widget-content">
@@ -142,7 +142,7 @@
 										<tr>
 											<th><div class="th-content">Plan</div></th>
 											<th><div class="th-content">Capital</div></th>
-											<th><div class="th-content">RIO</div></th>
+											<th><div class="th-content">ROI</div></th>
 											<th><div class="th-content">Daily profit</div></th>
 											<th><div class="th-content">Started</div></th>
 											<th><div class="th-content">Status</div></th>
