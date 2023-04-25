@@ -36,9 +36,6 @@ Route::get('/clear-cache', function() {
     return "Cache is cleared";
 });
 
-Route::get('add-en', function () {
-    dd(User::all());
-});
 
 Route::get('/end-site', function() {
     Artisan::call('down');
@@ -79,7 +76,7 @@ Route::get('/withlimit/reset', ['App\Http\Controllers\Admin\PlansController', 'r
 Route::group(['middleware' => ['auth', 'verified']],function () {
     Route::get('/user/dashboard', ['App\Http\Controllers\DashboardController', 'dashboard']);
 
-    Route::get('user/{locale}', [LocalizationController::class, 'setLocale'])->name('setUserLocale');
+    Route::get('user/lang/{locale}', [LocalizationController::class, 'setLocale'])->name('setUserLocale');
 
 
     Route::get('/user/profile', ['App\Http\Controllers\UserController', 'profile'])->name('user.profile');

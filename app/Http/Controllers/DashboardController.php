@@ -33,6 +33,7 @@ class DashboardController extends Controller
         for ($i = 0; $i < count($countires); $i++) {
             array_push($numbers, mt_rand(5, 200));
         }
+        
         $num = 0;
         return view('User.dashboard',compact('investments','plan','total_withdraw','total_capital', 'countires','numbers','num','invests'));
     }
