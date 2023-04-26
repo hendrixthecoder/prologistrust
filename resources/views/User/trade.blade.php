@@ -1,7 +1,7 @@
 @extends('Layouts.user')
 
 @section('title')
-  Trade Now
+  @lang('text.tradeNow')
 @endsection
 
 @section('content')
@@ -15,7 +15,7 @@
                   </div>
                   <div class="">
                     <p class="w">$ {{Auth::User()->dbalance}}</p>
-                    <h5 class="">Demo Balance</h5>
+                    <h5 class="">@lang('text.demoBalance')</h5>
                   </div>
                 </div>
               </div>
@@ -30,7 +30,7 @@
                   </div>
                   <div class="">
                     <p class="w">$ {{Auth::User()->rbalance}}</p>
-                    <h5 class="">Real Balance</h5>
+                    <h5 class="">@lang('text.realBalance')</h5>
                   </div>
                 </div>
               </div>
@@ -46,7 +46,7 @@
                   </div>
                   <div class="">
                     <p class="w">{{ $total_trades }}</p>
-                    <h5 class="">Total Trades</h5>
+                    <h5 class="">@lang('text.totTrades')</h5>
                   </div>
                 </div>
               </div>
@@ -62,7 +62,7 @@
                   </div>
                   <div class="">
                     <p class="w"> {{ count($won_trades) }}</p>
-                    <h5 class="">Won Trades</h5>
+                    <h5 class="">@lang('text.wonTrades')</h5>
                   </div>
                 </div>
               </div>
@@ -78,7 +78,7 @@
                   </div>
                   <div class="">
                     <p class="w"> {{ count($lose_trades)}}</p>
-                    <h5 class="">Lost Trades</h5>
+                    <h5 class="">@lang('text.lostTrades')</h5>
                   </div>
                 </div>
               </div>
@@ -122,9 +122,9 @@
 					<div class="widget widget-table-two">
 
 						<div class="widget-heading">
-							<h5 class="">Trade History</h5>
+							<h5 class="">@lang('text.tradeHistory')</h5>
               <div class="float-right navbar-nav flex-row ml-auto ">
-                <a href="{{url('/user/trade/asset/1')}}" class="btn btn-outline-primary">Trade Now</a>
+                <a href="{{url('/user/trade/asset/1')}}" class="btn btn-outline-primary">@lang('text.tradeNow')</a>
               </div>
 						</div>
 
@@ -133,10 +133,10 @@
 								<table class="table text-center">
                   <thead>
                     <tr>
-                        <th>Date</th>
-                        <th>Amount</th>
-                        <th>In time</th>
-                        <th>Status</th>
+                        <th>@lang('text.date')</th>
+                        <th>@lang('text.amount')</th>
+                        <th>@lang('text.inTime')</th>
+                        <th>@lang('text.status')</th>
                     </tr>
                 </thead>
 									<tbody style="font-weight: bold;">
@@ -168,7 +168,7 @@
                     </tr>
 
                     @empty
-                    <td colspan="4"> No Trades History </td>
+                    <td colspan="4">@lang('text.noTrades')</td>
                 @endforelse
 									</tbody>
 								</table>

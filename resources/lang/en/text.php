@@ -43,8 +43,16 @@
         'witDHist' => 'Withdrawal History',
         'myDown' => 'My Downlines',
         'transLog' => 'Transaction Log',
+        'demoBalance' => 'Demo Balance',
+        'realBalance' => 'Real Balance',
+        'totTrades' => 'Total Trades',
+        'wonTrades' => 'Won Trades',
+        'lostTrades' => 'Lost Trades',
+        'noTrades' => 'No Trades Yet',
+        'date' => 'Date',
+        'amount' => 'Amount',
+        'inTime' => 'In Time',
         
-
 
     ]
 
