@@ -19,15 +19,23 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($records as $record)
-                        <tr>
-                            <td>{{$record->id}}</td>
-                            <td>{{$record->amount}}</td>
-                            <td><span class="shadow-none badge badge-success">{{$record->result}}</span></td>
-                            <td><span class="shadow-none badge badge-success">{{$record->status}}</span></td>
-                            <td>{{$record->date}}</td>
-                        </tr>
-                    @endforeach
+                    @if ($records->isEmpty())
+                    <tr>
+                        <td colspan="5" style="text-align: center">
+                            @lang('text.noData')
+                        </td>
+                    </tr>
+                    @else    
+                        @foreach ($records as $record)
+                            <tr>
+                                <td>{{$record->id}}</td>
+                                <td>{{$record->amount}}</td>
+                                <td><span class="shadow-none badge badge-success">{{$record->result}}</span></td>
+                                <td><span class="shadow-none badge badge-success">{{$record->status}}</span></td>
+                                <td>{{$record->date}}</td>
+                            </tr>
+                        @endforeach
+                    @endif
                 </tbody>
             </table>
         </div>

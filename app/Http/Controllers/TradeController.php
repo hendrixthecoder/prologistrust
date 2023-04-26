@@ -14,9 +14,10 @@ class TradeController extends Controller
 {
     public function demo_trade($id){
         $coins = DB::table('crypto_currencies')->where('status', 'active')->get();
-        $stock = CryptoCurrency::find($id);
+        $stock = CryptoCurrency::findOrFail($id);
         return view('User.Trade.demo',compact('coins', 'stock'));
     }
+
     public function demo_history(){
         $records = DB::table('demohistory')->where('id', Auth::User()->id)->get();
         return view('User.demo_history',compact('records'));
@@ -29,10 +30,12 @@ class TradeController extends Controller
         $won_trades = DB::table('trades')->where('username', Auth::user()->id)->where('status', 'win')->get();
         $lose_trades = DB::table('trades')->where('username', Auth::user()->id)->where('status', 'loss')->get();
         return view('User.trade',compact('coins', 'total_trades','won_trades','lose_trades', 'records'));
+
     }
+
     public function trade_history(){
         $records = DB::table('trades')->where('username', Auth::User()->id)->get();
-        return view('User.trade_history',compact('records'));
+        return view('User.trade_history', compact('records'));
     }
 
     public function transaction_log(){

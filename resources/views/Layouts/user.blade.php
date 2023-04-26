@@ -189,11 +189,12 @@
           },
           "stripeClasses": [],
           "lengthMenu": [7, 10, 20, 50],
-          "pageLength": 7
+          "pageLength": 7,
       });
   </script>
   <!-- END PAGE LEVEL SCRIPTS -->
   <!-- BEGIN PAGE LEVEL SCRIPTS -->
+  <script src="https://cdn.datatables.net/plug-ins/1.13.4/i18n/ar.json"></script>
   <script src="{{asset('user/assets/js/scrollspyNav.js')}}"></script>
   <script src="{{asset('user/plugins/counter/jquery.countTo.js')}}"></script>
   <!-- END PAGE LEVEL SCRIPTS -->

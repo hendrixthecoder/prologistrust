@@ -54,8 +54,16 @@
         'inTime' => 'In Time',
         'liveTradeHistory' => 'Live Trade History',
         'res' => 'Result',
-        
-
+        'noData' => 'No data available in table',
+        'deposit' => 'Deposit',
+        'duration' => 'Duration',
+        'buy' => 'Buy',
+        'sell' => 'Sell',
+        'earnings' => 'Earnings',
+        'tradeW' => 'Trade Won',
+        'insufBal' => 'Sorry you have insufficient balance.',
+        'close' => 'Close',
+        'pleaseRotate' => 'Please rotate device to view this page',
     ]
 
 
