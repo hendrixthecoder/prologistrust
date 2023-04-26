@@ -65,7 +65,28 @@
         'close' => 'Close',
         'pleaseRotate' => 'Please rotate device to view this page',
         'demoAcc' => 'Demo Account:',
-        ''
+        'witDFunds' => 'Withdraw Funds',
+        'minWitd' => 'Minimum withdrawal is $15',
+        'dailyLim' => 'Daily Limit is',
+        'selAcc' => 'Select Account',
+        'profAcc' => 'Profit Account:',
+        'tradAcc' => 'Trading Account:',
+        'refBonus' => 'Ref Bonus:',
+        'walType' => 'Wallet Type',
+        'walAdd' => 'Wallet Address',
+        'btc' => 'Bitcoin',
+        'eth' => 'Ethereum',
+        'pMoney' => 'Perfect Money',
+        'usdt' => 'Tether USD (USDT)',
+        'witDSunSat' => 'Sorry, You can only make withdrawals on Saturdays and Sundays',
+        
+
+
+
+
+
+
+
     ]
 
 
