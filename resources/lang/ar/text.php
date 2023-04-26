@@ -64,7 +64,7 @@
         'insufBal' => 'آسف لديك توازن غير كاف.',
         'close' => 'Close',
         'pleaseRotate' => 'يرجى تدوير الجهاز لعرض هذه الصفحة',
-        'demoAcc' => 'Demo Account:',
+        'demoAcc' => 'الحساب التجريبي:',
 
 
 

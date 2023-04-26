@@ -117,7 +117,6 @@
                 <ul class="navbar-nav flex-row">
                     <li>
                         <div class="page-header">
-
                             <nav class="breadcrumb-one" aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item">@lang('text.user')</li>
