@@ -52,6 +52,8 @@
         'date' => 'Date',
         'amount' => 'Amount',
         'inTime' => 'In Time',
+        'liveTradeHistory' => 'Live Trade History',
+        'res' => 'Result',
         
 
     ]

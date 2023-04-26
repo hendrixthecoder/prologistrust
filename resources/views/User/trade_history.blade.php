@@ -1,7 +1,7 @@
 @extends('Layouts.user')
 
 @section('title')
-    Live Trade History
+    @lang('text.liveTradeHistory')
 @endsection
 
 @section('content')
@@ -11,11 +11,11 @@
             <table id="zero-config" class="table dt-table-hover" style="width:100%">
                 <thead>
                     <tr>
-                        <th>id</th>
-                        <th>Amount</th>
-                        <th>Result</th>
-                        <th>Status</th>
-                        <th>Date</th>
+                        <th>ID</th>
+                        <th>@lang('text.amount')</th>
+                        <th>@lang('text.res')</th>
+                        <th>@lang('text.status')</th>
+                        <th>@lang('text.date')</th>
                     </tr>
                 </thead>
                 <tbody>
