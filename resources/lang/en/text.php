@@ -64,6 +64,8 @@
         'insufBal' => 'Sorry you have insufficient balance.',
         'close' => 'Close',
         'pleaseRotate' => 'Please rotate device to view this page',
+        'demoAcc' => 'Demo Account:',
+        ''
     ]
 
 
