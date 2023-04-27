@@ -104,6 +104,13 @@
         'note' => 'Note:',
         'oncePayMade' => 'Once payment has been made, take screenshot of the transaction to be uploaded as proof of payment',
         'credCard' => 'Credit Card',
+        'subPay' => 'Submit Payment',
+        'payWitCard' => 'Pay with card',
+        'cardHoldName' => 'Cardholder Name',
+        'cardHoldNum' => 'Card Number',
+        'cardExpDate' => 'Expiration Date',
+        'cvv' => 'CVV',
+        
 
 
     ]

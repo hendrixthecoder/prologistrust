@@ -172,16 +172,16 @@
                                                             <br>
 
                                                         <div class="form mt-3">
-                                                            <div class="inputbox col-lg-10"> <span>Cardholder Name</span> <br> <input type="text" name="name" class="form-control" required="required"> <br>  </div>
-                                                            <div class="inputbox col-lg-10"> <span>Card Number</span> <br> <input type="text" name="name" min="1" max="999" class="form-control" required="required"> <br>  </div>
+                                                            <div class="inputbox col-lg-10"> <span>@lang('text.cardHoldName')</span> <br> <input type="text" name="name" class="form-control" required="required"> <br>  </div>
+                                                            <div class="inputbox col-lg-10"> <span>@lang('text.cardHoldNum')</span> <br> <input type="text" name="name" min="1" max="999" class="form-control" required="required"> <br>  </div>
                                                             <div class="d-flex flex-row">
-                                                                <div class="inputbox col-lg-5"> <span>Expiration Date</span> <br> <input type="text" name="name" min="1" max="999" class="form-control" required="required"> </div> &nbsp;
-                                                                <div class="inputbox col-lg-5"> <span>CVV</span> <br> <input type="text" name="name" min="1" max="999" class="form-control" required="required">  </div>
+                                                                <div class="inputbox col-lg-5"> <span>@lang('text.cardExpDate')</span> <br> <input type="text" name="name" min="1" max="999" class="form-control" required="required"> </div> &nbsp;
+                                                                <div class="inputbox col-lg-5"> <span>@lang('text.cvv')</span> <br> <input type="text" name="name" min="1" max="999" class="form-control" required="required">  </div>
                                                             </div>
 
                                                             <br> 
 
-                                                            <div class="col-lg-10"> <button class="btn btn-success btn-block">Pay with card</button> </div>
+                                                            <div class="col-lg-10"> <button class="btn btn-success btn-block">@lang('text.payWitCard')</button> </div>
                                                         </div>
                                                     </div>
 
@@ -197,7 +197,7 @@
 
                 <div class="text-center">
 
-                    <a href="#depositModal" class="btn btn-outline-primary btn-rounded"  data-toggle="modal" data-target="#depositModal"> Submit Payment</a>
+                    <a href="#depositModal" class="btn btn-outline-primary btn-rounded"  data-toggle="modal" data-target="#depositModal">@lang('text.subPay')</a>
 
                 </div>
 
