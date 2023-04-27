@@ -90,11 +90,9 @@
                                         @lang('text.sendAmtDep')
                                     </p>
 
-                                    <p> <span class="text-danger"> @lang('text.instruction') </span> This address is for only deposits with Ethereum
-
-                                        In case you send a different amount, your account will be updated accordingly.</p>  
+                                    <p> <span class="text-danger"> @lang('text.instruction') </span> @lang('text.thisAddTextEth')</p>  
                                         
-                                        <p class="text-danger"> Note: </p>
+                                        <p class="text-danger">@lang('text.note')</p>
                                         <p> @lang('text.oncePayMade') </p>
 
                                             <br>
@@ -116,9 +114,7 @@
                                                     @lang('text.sendAmtDep')                                           
                                                 </p>
 
-                                                <p> <span class="text-danger"> @lang('text.instruction') </span> This wallet address is for only deposits with USDT.
-
-                                                    In case you send a different amount, your account will be updated accordingly.</p>  
+                                                <p> <span class="text-danger"> @lang('text.instruction') </span>@lang('text.thisAddTextUsdt')</p>  
                                                     
                                                     <p class="text-danger"> @lang('text.note') </p>
                                                     <p>@lang('text.oncePayMade')</p>

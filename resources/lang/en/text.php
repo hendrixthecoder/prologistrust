@@ -100,6 +100,8 @@
         'sendAmtDep' => 'You are to send amount to the address below or scan the QR code to complete payment.',
         'instruction' => 'Instruction:',
         'thisAddText' => 'This address is only for deposits with Bitcoin, in case you send a different amount, your account will be updated accordingly. Get bitcoins at',
+        'thisAddTextEth' => 'This address is for only deposits with Ethereum in case you send a different amount, your account will be updated accordingly.',
+        'thisAddTextUsdt' => 'This wallet address is for only deposits with USDT. In case you send a different amount, your account will be updated accordingly.',
         'ifNoAny' => "if you don't already have any.",
         'note' => 'Note:',
         'oncePayMade' => 'Once payment has been made, take screenshot of the transaction to be uploaded as proof of payment',
@@ -110,7 +112,7 @@
         'cardHoldNum' => 'Card Number',
         'cardExpDate' => 'Expiration Date',
         'cvv' => 'CVV',
-        
+
 
 
     ]
