@@ -93,6 +93,8 @@
         'detail' => 'Detail',
         'tradeL' => 'Trade Lost',
         'return' => 'Return',
+        'instAct' => 'Instant Activation',
+        
 
     ]
 

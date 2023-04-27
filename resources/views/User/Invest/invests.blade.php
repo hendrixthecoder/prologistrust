@@ -63,12 +63,12 @@
 
           <div style="font-size:24px;">${{ $data->min }} - ${{ $data->max }}</div>
           <ul class="pricing__feature-list text-center">
-              <li class="pricing__feature"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg> {{ $data->duration }} Investment</li>
-              <li class="pricing__feature"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg> {{ $data->roi }}% Daily Profit</li>
-              <li class="pricing__feature"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg> Instant Activation</li>
+              <li class="pricing__feature"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg> {{ $data->duration }} @lang('text.invPlan')</li>
+              <li class="pricing__feature"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg> {{ $data->roi }}% @lang('text.dailyProf')</li>
+              <li class="pricing__feature"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg> @lang('text.instAct')</li>
           </ul>
           <div class="mb-4">
-            <a href="{{ url('/user/invests/preview/'.$data->id) }}" class="pricing__action mx-auto mb-4 btn-sm">Buy Plan</a>
+            <a href="{{ url('/user/invests/preview/'.$data->id) }}" class="pricing__action mx-auto mb-4 btn-sm">@lang('text.buy') @lang('text.invPlan')</a>
           </div>
         </div>
       @empty
