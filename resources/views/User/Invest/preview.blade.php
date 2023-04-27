@@ -253,7 +253,6 @@
                  <input type="number" class="form-control" min="{{$invest->min}}" max="{{$invest->max}}" name="amount" id="amount" required>
               
               <br>
-
                   <label for="payment_proof">@lang('text.uplProof')* </label> <br>
                   <input type="file" class="form-control" id="image" name="image" required/>
 
