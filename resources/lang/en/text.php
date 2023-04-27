@@ -121,6 +121,9 @@
         'methodOfPay' => 'Method of Payment',
         'modeOfPay' => 'Mode of Payment',
         'cancel' => 'Cancel',
+        'planPurSuc' => 'Plan Purchased Successfully',
+        'profUpdsuc' => 'Personal Information Updated Successfully',
+        'passNoMatch' => 'Password Does Not Match',
     ]
 
 

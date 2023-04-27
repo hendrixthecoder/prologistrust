@@ -18,7 +18,6 @@ use Psy\CodeCleaner\FunctionReturnInWriteContextPass;
 
 class UserController extends Controller
 {
-
     public function invests()
     {
         $page_title = 'My Investments';
@@ -84,7 +83,7 @@ class UserController extends Controller
           $inve->save();
 
           return redirect('user/invests')
-          ->with('success', 'Plan Purchased Successfully');
+          ->with('success', trans('text.planPurSuc'));
         }
         
     }
@@ -110,7 +109,7 @@ class UserController extends Controller
 
         $user->update();
 
-        return redirect('/user/profile')->with('success', 'Personal Information Updated Successfully');
+        return redirect('/user/profile')->with('success', trans('text.profUpdsuc'));
     }
 
     public function updateppic (Request $request, $id)
@@ -123,7 +122,7 @@ class UserController extends Controller
             $user->image = $filename;
             $user->update();
         
-        return redirect('/user/profile')->with('success', 'Profile Photo Updated Successfully');
+        return redirect('/user/profile')->with('success', trans('text.profUpdsuc'));
     }
 
     public function updatepwrd (Request $request, $id)
@@ -140,7 +139,7 @@ class UserController extends Controller
         }
         elseif ($pass2 !== $pass1)
         {
-            return redirect('/user/profile')->with('errors', 'Password Does Not Match');
+            return redirect('/user/profile')->with('errors', trans('text.passNoMatch'));
         }
         else
         {
@@ -148,7 +147,7 @@ class UserController extends Controller
 
             $user->password = Hash::make($request->input('password'));
             $user->update();
-            return redirect('/user/profile')->with('success', 'Password Updated Sucessfully');
+            return redirect('/user/profile')->with('success', trans('text.profUpdsuc'));
         }
         
 

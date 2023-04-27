@@ -232,42 +232,39 @@
 
         <div class="modal-body text-left">
 
-             <input type="hidden" class="form-control" value="{{ __($trx_id) }}" id="trx_id" name="trx_id"> 
+            <input type="hidden" class="form-control" value="{{ __($trx_id) }}" id="trx_id" name="trx_id"> 
 
-              <div class="form-group hidden">
+            <div class="form-group hidden">
                 <div class="input-group mb-5">
                   <input type="hidden" class="form-control" name="duration" id="duration" value="{{ $invest->duration }}">
                   <input type="hidden" class="form-control"  name="roi" id="roi" value="{{ $invest->roi }}">
                   <input type="hidden" class="form-control"  name="time_left" id="time_left" value="122">   
                 </div>   
-              </div>
+            </div>
 
-              <div class="form-group" hidden>
+            <div class="form-group" hidden>
                   <label for="amount">Plan: </label>
                   <input type="hidden" class="form-control" placeholder="" name="plan_id" id="Plan_id" value="{{ $invest->id }}">
               </div>
-              <div class="text-center">
+            <div class="text-center">
                 <h5>@lang('text.limit') <span class="text-info">${{$invest->min}} - ${{$invest->max}}</span></h5>
-              </div>
+            </div>
                 <label for="payment_proof"> @lang('text.amount')* </label>
                  <input type="number" class="form-control" min="{{$invest->min}}" max="{{$invest->max}}" name="amount" id="amount" required>
-              
-              <br>
-                  <label for="payment_proof">@lang('text.uplProof')* </label> <br>
-                  <input type="file" class="form-control" id="image" name="image" required/>
+            <br>
+            <label for="payment_proof">@lang('text.uplProof')* </label> <br>
+            <input type="file" class="form-control" id="image" name="image" required/>
 
-                    <br><br>
-                    
-                    <label for="payment_proof">@lang('text.methodOfPay')* </label>
-                    <select id="method" name="method" class="form-control" required readonly>
-							<option selected> --@lang('text.modeOfPay')--</option>
-                            <option>@lang('text.btc')</option>
-                            <option>@lang('text.eth')</option>
-                            <option>@lang('text.usdt')</option>
-                            <option>@lang('text.pMoney')</option>	
-					</select>
+            <br><br>
             
-                  
+            <label for="payment_proof">@lang('text.methodOfPay')* </label>
+            <select id="method" name="method" class="form-control" required readonly>
+                    <option selected> --@lang('text.modeOfPay')--</option>
+                    <option>@lang('text.btc')</option>
+                    <option>@lang('text.eth')</option>
+                    <option>@lang('text.usdt')</option>
+                    <option>@lang('text.pMoney')</option>	
+            </select>
         </div>
 
         <div class="modal-footer">
