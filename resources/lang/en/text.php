@@ -96,14 +96,15 @@
         'instAct' => 'Instant Activation',
         'noPlansAvail' => 'No Plans Available',
         'purPlanRev' => 'Purchase Plan Preview',
-        'depWitBit' => 'Deposit with Bitcoin!',
+        'depWith' => 'Deposit with',
         'sendAmtDep' => 'You are to send amount to the address below or scan the QR code to complete payment.',
         'instruction' => 'Instruction:',
         'thisAddText' => 'This address is only for deposits with Bitcoin, in case you send a different amount, your account will be updated accordingly. Get bitcoins at',
         'ifNoAny' => "if you don't already have any.",
         'note' => 'Note:',
         'oncePayMade' => 'Once payment has been made, take screenshot of the transaction to be uploaded as proof of payment',
-        
+        'credCard' => 'Credit Card',
+
 
     ]
 

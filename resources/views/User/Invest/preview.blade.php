@@ -51,18 +51,18 @@
 
                 <div class="col-sm-3 col-12">
                     <div class="nav flex-column nav-pills mb-sm-0 mb-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active mb-2" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Bitcoin</a>
-                    <a class="nav-link mb-2" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Ethereum</a>
-                    <a class="nav-link mb-2" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Usdt</a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Perfect Money</a>
-                    <a class="nav-link" id="v-pills-card-tab" data-toggle="pill" href="#v-pills-card" role="tab" aria-controls="v-pills-card" aria-selected="false">Credit Card</a>
+                    <a class="nav-link active mb-2" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">@lang('text.btc')</a>
+                    <a class="nav-link mb-2" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">@lang('text.eth')</a>
+                    <a class="nav-link mb-2" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">@lang('text.usdt')</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">@lang('text.pMoney')</a>
+                    <a class="nav-link" id="v-pills-card-tab" data-toggle="pill" href="#v-pills-card" role="tab" aria-controls="v-pills-card" aria-selected="false">@lang('text.credCard')</a>
                     </div>
                 </div>
 
                 <div class="col-sm-9 col-12">
                     <div class="tab-content" id="v-pills-tabContent">
                              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                 <h4 class="mb-4 text-warning">@lang('text.depWitBit')</h4>
+                                 <h4 class="mb-4 text-warning">@lang('text.depWith') @lang('text.btc')</h4>
                                     <p class="mb-4">
                                     @lang('text.sendAmtDep')                                               
                                     </p>
@@ -85,17 +85,17 @@
                              </div>
 
                              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                   <h4 class="mb-4 text-warning">Deposit with Ethereum!</h4>
+                                   <h4 class="mb-4 text-warning">@lang('text.depWith') @lang('text.eth')</h4>
                                     <p class="mb-4">
-                                    You are to send amount to the address below or scan the QR code to complete payment.                                               
+                                        @lang('text.sendAmtDep')
                                     </p>
 
-                                    <p> <span class="text-danger"> Instruction: </span> This address is for only deposits with Ethereum
+                                    <p> <span class="text-danger"> @lang('text.instruction') </span> This address is for only deposits with Ethereum
 
                                         In case you send a different amount, your account will be updated accordingly.</p>  
                                         
                                         <p class="text-danger"> Note: </p>
-                                        <p> Once payment has ben made, take screenshot of the transaction to be uploaded as proof of payment </p>
+                                        <p> @lang('text.oncePayMade') </p>
 
                                             <br>
 
@@ -111,17 +111,17 @@
                                </div>
 
                                 <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                                                <h4 class="mb-4 text-warning">Deposit with USDT!</h4>
+                                                <h4 class="mb-4 text-warning">@lang('text.depWith') @lang('text.usdt')</h4>
                                                 <p class="mb-4">
-                                                You are to send amount to the address below or scan the QR code to complete payment.                                               
+                                                    @lang('text.sendAmtDep')                                           
                                                 </p>
 
-                                                <p> <span class="text-danger"> Instruction: </span> This wallet address is for only deposits with USDT.
+                                                <p> <span class="text-danger"> @lang('text.instruction') </span> This wallet address is for only deposits with USDT.
 
                                                     In case you send a different amount, your account will be updated accordingly.</p>  
                                                     
-                                                    <p class="text-danger"> Note: </p>
-                                                    <p> Once payment has ben made, take screenshot of the transaction to be uploaded as proof of payment </p>
+                                                    <p class="text-danger"> @lang('text.note') </p>
+                                                    <p>@lang('text.oncePayMade')</p>
 
                                                         <br>
 
@@ -139,17 +139,17 @@
                                 </div>
 
                                 <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                                                <h4 class="mb-4 text-warning">Deposit with Perfect Money!</h4>
+                                                <h4 class="mb-4 text-warning">@lang('text.depWith') @lang('text.pMoney')</h4>
                                                 <p class="mb-4">
-                                                You are to send amount to the address below to complete payment.                                               
+                                                    @lang('text.sendAmtDep')                                               
                                                 </p>
 
-                                                <p> <span class="text-danger"> Instruction: </span> This wallet address is for only deposits with Perfect Money.
+                                                <p> <span class="text-danger"> @lang('text.instruction') </span> This wallet address is for only deposits with Perfect Money.
 
                                                 In case you send a different amount, your account will be updated accordingly.</p>  
                                                     
-                                                <p class="text-danger"> Note: </p>
-                                                <p> Once payment has ben made, take screenshot of the transaction to be uploaded as proof of payment </p>
+                                                <p class="text-danger"> @lang('text.note') </p>
+                                                <p>@lang('text.oncePayMade')</p>
 
                                                 <br>
 
@@ -160,7 +160,7 @@
                                 </div>
 
                                 <div class="tab-pane fade" id="v-pills-card" role="tabpanel" aria-labelledby="v-pills-card-tab">
-                                                <h4 class="mb-4 text-warning">Deposit with Credit Card!</h4>
+                                                <h4 class="mb-4 text-warning">@lang('text.depWith') @lang('text.credCard')</h4>
                                                 
                                                 <br>
 
