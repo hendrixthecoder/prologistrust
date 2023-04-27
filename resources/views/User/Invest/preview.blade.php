@@ -1,7 +1,7 @@
 @extends('Layouts.user')
 
 @section('title')
-    {{ __($page_title) }}
+    @lang('text.purPlanRev')
 @endsection
 
 @section('content')
@@ -62,16 +62,12 @@
                 <div class="col-sm-9 col-12">
                     <div class="tab-content" id="v-pills-tabContent">
                              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                 <h4 class="mb-4 text-warning">Deposit with Bitcoin!</h4>
+                                 <h4 class="mb-4 text-warning">@lang('text.depWitBit')</h4>
                                     <p class="mb-4">
-                                    You are to send amount to the address below or scan the QR code to complete payment.                                               
+                                    @lang('text.sendAmtDep')                                               
                                     </p>
 
-                                    <p> <span class="text-danger"> Instruction: </span> This address is for only deposits with Bitcoin
-
-                                        In case you send a different amount, your account will be updated accordingly.
-
-                                        Get bitcoins at <a href="https://www.localbitcoins.com"> Localbitcoins.com</a> if you don't already have any.</p>  
+                                    <p> <span class="text-danger"> @lang('text.instruction') </span> @lang('text.thisAddText') <a href="https://www.localbitcoins.com"> Localbitcoins.com</a> @lang('text.ifNoAny')</p>  
                                         
                                         <p class="text-danger"> Note: </p>
                                         <p> Once payment has ben made, take screenshot of the transaction to be uploaded as proof of payment </p>
