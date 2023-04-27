@@ -115,8 +115,12 @@
         'cvv' => 'CVV',
         'sendOnlyTRC' => 'Send only Tether (TRC20) to this address.',
         'permLoss' => 'Sending any other coins may result in permanent loss.',
-
-
+        'fillDet' => 'Fill in your payment details below and click submit',
+        'limit' => 'Limit',
+        'uplProof' => 'Upload Proof of Payment',
+        'methodOfPay' => 'Method of Payment',
+        'modeOfPay' => 'Mode of Payment',
+        'cancel' => 'Cancel',
     ]
 
 

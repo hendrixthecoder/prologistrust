@@ -221,7 +221,7 @@
     <div class="modal-content">
 
         <div class="modal-header">
-            <h6 class="modal-title" id="exampleModalCenterTitle">Fill in your payment details below and click submit </h6>
+            <h6 class="modal-title" id="exampleModalCenterTitle">@lang('text.fillDet')</h6>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
@@ -247,33 +247,33 @@
                   <input type="hidden" class="form-control" placeholder="" name="plan_id" id="Plan_id" value="{{ $invest->id }}">
               </div>
               <div class="text-center">
-                <h5>Limit: <span class="text-info">${{$invest->min}} - ${{$invest->max}}</span></h5>
+                <h5>@lang('text.limit') <span class="text-info">${{$invest->min}} - ${{$invest->max}}</span></h5>
               </div>
-                <label for="payment_proof"> Amount* </label>
+                <label for="payment_proof"> @lang('text.amount')* </label>
                  <input type="number" class="form-control" min="{{$invest->min}}" max="{{$invest->max}}" name="amount" id="amount" required>
               
               <br>
 
-                  <label for="payment_proof"> Upload Proof of Payment* </label> <br>
+                  <label for="payment_proof">@lang('text.uplProof')* </label> <br>
                   <input type="file" class="form-control" id="image" name="image" required/>
 
                     <br><br>
                     
-                    <label for="payment_proof"> Method of Payment* </label>
+                    <label for="payment_proof">@lang('text.methodOfPay')* </label>
                     <select id="method" name="method" class="form-control" required readonly>
-							<option selected> --Mode of Payment--</option>
-                            <option>Bitcoin</option>
-                            <option>Ethereum</option>
-                            <option>Usdt</option>
-                            <option>Perfect Money</option>	
+							<option selected> --@lang('text.modeOfPay')--</option>
+                            <option>@lang('text.btc')</option>
+                            <option>@lang('text.eth')</option>
+                            <option>@lang('text.usdt')</option>
+                            <option>@lang('text.pMoney')</option>	
 					</select>
             
                   
         </div>
 
         <div class="modal-footer">
-            <button class="btn btn-dark" data-dismiss="modal"><i class="flaticon-cancel-12"></i> Cancel </button>
-            <button type="submit" name="btnsubmit" class="btn btn-primary">Submit</button>
+            <button class="btn btn-dark" data-dismiss="modal"><i class="flaticon-cancel-12"></i> @lang('text.cancel') </button>
+            <button type="submit" name="btnsubmit" class="btn btn-primary">@lang('text.subPay')</button>
         </div>
       </form> 
     </div>
