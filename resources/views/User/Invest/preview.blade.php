@@ -69,8 +69,8 @@
 
                                     <p> <span class="text-danger"> @lang('text.instruction') </span> @lang('text.thisAddText') <a href="https://www.localbitcoins.com"> Localbitcoins.com</a> @lang('text.ifNoAny')</p>  
                                         
-                                        <p class="text-danger"> Note: </p>
-                                        <p> Once payment has ben made, take screenshot of the transaction to be uploaded as proof of payment </p>
+                                        <p class="text-danger"> @lang('text.note') </p>
+                                        <p>@lang('text.oncePayMade')</p>
 
                                             <br>
 
