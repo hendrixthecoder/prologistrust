@@ -158,9 +158,8 @@ class UserController extends Controller
     public function viewdownlines()
     {
         $downlines = DB::table('users')->where('referrer_id', Auth::User()->id)->get();
-        $page_title = 'Downlines';
 
-        return view('User.downlines', compact('downlines', 'page_title'));
+        return view('User.downlines', compact('downlines'));
     }
 
 }

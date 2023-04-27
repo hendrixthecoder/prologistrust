@@ -1,7 +1,7 @@
 @extends('Layouts.user')
 
 @section('title')
-    {{ __($page_title) }}
+  @lang('text.invPlans')
 @endsection
 
 @section('content')

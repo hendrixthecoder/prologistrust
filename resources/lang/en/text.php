@@ -79,13 +79,20 @@
         'pMoney' => 'Perfect Money',
         'usdt' => 'Tether USD (USDT)',
         'witDSunSat' => 'Sorry, You can only make withdrawals on Saturdays and Sundays',
-        
-
-
-
-
-
-
+        'method' => 'Method',
+        'transId' => 'Transaction ID',
+        'totWtd' => 'Total Withdrawal:',
+        'downL' => 'Downlines',
+        'name' => 'Name',
+        'email' => 'Email',
+        'location' => 'Location',
+        'phone' => 'Phone',
+        'noDownL' => 'Sorry you do not have any downlines yet',
+        'referUserCom' => 'Refer users to earn commisions',
+        'refLink' => 'Referral Link:',
+        'detail' => 'Detail',
+        'tradeL' => 'Trade Lost',
+        'return' => 'Return',
 
     ]
 

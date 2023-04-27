@@ -1,20 +1,18 @@
 @extends('Layouts.user')
 
 @section('title')
-  Withdrawal History
+  @lang('text.witDHist')
 @endsection
 
 @section('content')
 <div class="row layout-top-spacing">
     <div class="col-12 layout-spacing">
-        <p>Total Withdrawal: <strong><span class="text-info">{{$total}}</span></strong> USD</p>
+        <p>@lang('text.totWtd') <strong><span class="text-info">{{$total}}</span></strong> USD</p>
     </div>
 </div>
 
 <div class="row layout-top-spacing" id="cancel-row">
     <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
-
-
 
         @if (session()->has('success'))
           <div class="alert alert-primary mb-4" role="alert">
@@ -41,15 +39,23 @@
             <table id="zero-config" class="table dt-table-hover" style="width:100%">
                 <thead>
                     <tr>
-                        <th>Transaction ID</th>
-                        <th>Method</th>
-                        <th>Wallet Address</th>
-                        <th>Amount</th>
-                        <th>Date</th>
-                        <th>Status</th>
+                        <th>@lang('text.transId')</th>
+                        <th>@lang('text.method')</th>
+                        <th>@lang('text.walAdd')</th>
+                        <th>@lang('text.amount')</th>
+                        <th>@lang('text.date')</th>
+                        <th>@lang('text.status')</th>
                     </tr>
                 </thead>
                 <tbody>
+                    @if ($records->isEmpty())
+                    <tr>
+                      <td colspan="5" style="text-align: center;">
+                        @lang('text.noData')
+                      </td>
+                    </tr>
+
+                    @else  
                     @foreach ($records as $record)
                         <tr>
                             <td>{{$record->trx_id}}</td>
@@ -68,6 +74,7 @@
                             </td>
                         </tr>
                     @endforeach
+                    @endif
                 </tbody>
             </table>
         </div>

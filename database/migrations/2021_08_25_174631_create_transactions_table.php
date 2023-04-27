@@ -21,6 +21,8 @@ class CreateTransactionsTable extends Migration
             $table->string('charge')->nullable();
             $table->string('post_balance')->nullable();
             $table->string('detail')->nullable();
+            $table->string('balance');
+            $table->string('type');
             $table->timestamps();
         });
     }

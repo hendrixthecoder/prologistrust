@@ -1,7 +1,7 @@
 @extends('Layouts.user')
 
 @section('title')
-    {{$page_title}}
+    @lang('text.downL')
 @endsection
 
 @section('content')
@@ -45,16 +45,16 @@
                                                             <span class="new-control-indicator"></span>
                                                             </label>
                                                         </div>
-                                                        <h4>Name</h4>
+                                                        <h4>@lang('text.name')</h4>
                                                     </div>
                                                     <div class="user-email">
-                                                        <h4>Email</h4>
+                                                        <h4>@lang('text.email')</h4>
                                                     </div>
                                                     <div class="user-location">
-                                                        <h4 style="margin-left: 0;">Location</h4>
+                                                        <h4 style="margin-left: 0;">@lang('text.location')</h4>
                                                     </div>
                                                     <div class="user-phone text-center">
-                                                        <h4 style="margin-left: 3px;">Phone</h4>
+                                                        <h4 style="margin-left: 3px;">@lang('text.phone')</h4>
                                                     </div>
 
                                                 </div>
@@ -93,14 +93,13 @@
 
                                             @empty
                                                 <div class="text-center">
-                                                    <p class="info-title">Sory you do not have any downlines yet</p>
-                                                    <p class="usr-email-addr"> Refer users to earn commisions</p>
-
+                                                    <p class="info-title">@lang('text.noDownL')</p>
+                                                    <p class="usr-email-addr">@lang('text.referUserCom')</p>
                                                 </div>
                                             @endforelse
                                             <div class="text-center">
                                                     <br><br>
-                                                    <p class="info-title"> Referrer Link: {{Auth::User()->referral_link}}</p>
+                                                    <p class="info-title">@lang('text.refLink'){{Auth::User()->referral_link}}</p>
                                             </div>
 
 
