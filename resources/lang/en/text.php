@@ -102,6 +102,7 @@
         'thisAddText' => 'This address is only for deposits with Bitcoin, in case you send a different amount, your account will be updated accordingly. Get bitcoins at',
         'thisAddTextEth' => 'This address is for only deposits with Ethereum in case you send a different amount, your account will be updated accordingly.',
         'thisAddTextUsdt' => 'This wallet address is for only deposits with USDT. In case you send a different amount, your account will be updated accordingly.',
+        'thisAddTextPMoney' => 'This wallet address is for only deposits with Perfect Money. In case you send a different amount, your account will be updated accordingly.',
         'ifNoAny' => "if you don't already have any.",
         'note' => 'Note:',
         'oncePayMade' => 'Once payment has been made, take screenshot of the transaction to be uploaded as proof of payment',
@@ -112,7 +113,8 @@
         'cardHoldNum' => 'Card Number',
         'cardExpDate' => 'Expiration Date',
         'cvv' => 'CVV',
-
+        'sendOnlyTRC' => 'Send only Tether (TRC20) to this address.',
+        'permLoss' => 'Sending any other coins may result in permanent loss.',
 
 
     ]

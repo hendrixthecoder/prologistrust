@@ -130,7 +130,7 @@
                                                         <div class="text-center">
                                                             <img class="mr-3" src="{{ asset('user/assets/img/usdt.jpeg') }}" alt="barcode" style="width: 300px; height:300px;">
                                                             <br><br>
-                                                            <small>Send only <strong>Tether (TRC20) </strong>to this addess.<br>Sending any other coins may result in permanent loss.</small>
+                                                            <small>@lang('text.sendOnlyTRC')<br>@lang('text.permLoss')</small>
                                                         </div>
                                 </div>
 
@@ -140,9 +140,7 @@
                                                     @lang('text.sendAmtDep')                                               
                                                 </p>
 
-                                                <p> <span class="text-danger"> @lang('text.instruction') </span> This wallet address is for only deposits with Perfect Money.
-
-                                                In case you send a different amount, your account will be updated accordingly.</p>  
+                                                <p> <span class="text-danger"> @lang('text.instruction') </span>@lang('text.thisAddTextPMoney')</p>  
                                                     
                                                 <p class="text-danger"> @lang('text.note') </p>
                                                 <p>@lang('text.oncePayMade')</p>
