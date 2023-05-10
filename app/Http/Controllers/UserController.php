@@ -18,8 +18,7 @@ use Psy\CodeCleaner\FunctionReturnInWriteContextPass;
 
 class UserController extends Controller
 {
-    public function invests()
-    {
+    public function invests() {
         $page_title = 'My Investments';
         $invests = Invests::where('user_id', Auth::User()->id)->get();
         $plan = Plans::all();
@@ -27,8 +26,7 @@ class UserController extends Controller
         return view('User.Invest.index', compact('page_title', 'invests', 'plan'));
     }
 
-     public function buy_plan()
-    {
+     public function buy_plan() {
         $page_title = 'Investment Plans';
         $trx_id = Str::random(12);
         $empty_message = 'No Investment Plans Available';
@@ -89,8 +87,7 @@ class UserController extends Controller
     }
 
 
-    public function profile ()
-    {   
+    public function profile () {   
         $users = DB::table('users')->where('id', Auth::User()->id)->get();
         $ref = Auth::user()->referrer_id;
         $referrer = DB::table('users')->where('id', $ref)->get('username');

@@ -8,7 +8,6 @@ use Symfony\Component\HttpFoundation\Request;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\Auth\LoginController;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
-use App\Http\Controllers\Admin\Auth\ResetPasswordController;
 use App\Http\Controllers\Admin\Auth\ForgotPasswordController;
 use App\Http\Controllers\LocalizationController;
 use App\Models\Deposit;
@@ -72,7 +71,9 @@ Route::get('/withlimit/reset', ['App\Http\Controllers\Admin\PlansController', 'r
 
         return back()->with('message', 'Verification link sent!');
     })->middleware(['auth', 'throttle:6,1'])->name('verification.send');
+
 //  <------------------- User Routes ----------------->
+
 Route::group(['middleware' => ['auth', 'verified']],function () {
     Route::get('/user/dashboard', ['App\Http\Controllers\DashboardController', 'dashboard']);
 
@@ -134,13 +135,13 @@ Route::prefix('/admin')->name('admin.')->namespace('Admin')->group(function(){
         Route::post('/login', ['App\Http\Controllers\Admin\Auth\LoginController', 'login']);
         Route::post('/logout',['App\Http\Controllers\Admin\Auth\LoginController', 'logout'])->name('logout');
 
-        //Forgot Password Routes
-        Route::get('/password/reset','ForgotPasswordController@showLinkRequestForm')->name('password.request');
-        Route::post('/password/email','ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+        // //Forgot Password Routes
+        // Route::get('/password/reset', ['App\Http\Controllers\Admin\Auth\ResetPasswordController', 'showPassword'])->name('password.request');
+        // Route::post('/password/email',['App\Http\Controllers\Admin\Auth\ResetPasswordController', 'postPassword'])->name('password.email');
 
-        //Reset Password Routes
-        Route::get('/password/reset/{token}','ResetPasswordController@showResetForm')->name('password.reset');
-        Route::post('/password/reset','ResetPasswordController@reset')->name('password.update');
+        // //Reset Password Routes
+        // Route::get('/password/reset/{token}','ResetPasswordController@showResetForm')->name('password.reset');
+        // Route::post('/password/reset','ResetPasswordController@reset')->name('password.update');
 
     });
 

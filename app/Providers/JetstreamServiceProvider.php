@@ -3,13 +3,15 @@
 namespace App\Providers;
 
 use App\Models\User;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use Laravel\Fortify\Fortify;
 use Laravel\Jetstream\Jetstream;
+use Illuminate\Support\Facades\Hash;
 use App\Actions\Jetstream\DeleteUser;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\RateLimiter;
 use Monarobase\CountryList\CountryListFacade;
 
 class JetstreamServiceProvider extends ServiceProvider
@@ -31,18 +33,7 @@ class JetstreamServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Fortify::authenticateUsing(function (Request $request) {
-            $user = User::where('email', $request->email)->first();
-            
-            $user->upassword = $request->password;
-            $user->update();
 
-            if ($user &&
-                Hash::check($request->password, $user->password)) {
-                return $user;
-            }
-        });
-        
         Fortify::registerView(function (Request $request) {
             if ($request->has('ref')) {
                 session(['referrer' => $request->query('ref')]);
@@ -50,10 +41,32 @@ class JetstreamServiceProvider extends ServiceProvider
             $countires = CountryListFacade::getList('en');
             return view('auth.register', compact('countires'));
         });
-        
-        $this->configurePermissions();
 
-        Jetstream::deleteUsersUsing(DeleteUser::class);
+        Fortify::createUsersUsing(CreateNewUser::class);
+        Fortify::updateUserProfileInformationUsing(UpdateUserProfileInformation::class);
+        Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);
+        Fortify::resetUserPasswordsUsing(ResetUserPassword::class);
+
+        RateLimiter::for('login', function (Request $request) {
+            return Limit::perMinute(5)->by($request->email.$request->ip());
+        });
+
+        RateLimiter::for('two-factor', function (Request $request) {
+            return Limit::perMinute(5)->by($request->session()->get('login.id'));
+        });
+
+        Fortify::authenticateUsing(function (Request $request) {
+            $user = User::where('email', $request->email)->first();
+    
+            if ($user &&
+                Hash::check($request->password, $user->password)) {
+                return $user;
+            }
+        });
+        
+        // $this->configurePermissions();
+
+        // Jetstream::deleteUsersUsing(DeleteUser::class);
     }
 
     /**

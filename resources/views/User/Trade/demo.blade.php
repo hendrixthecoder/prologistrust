@@ -728,6 +728,7 @@
             else
             {
                 anima();
+                
                 var user_id = $('#txt_userid').val();
                 var data = {
 					'user_id': $('#txt_userid').val(),
@@ -735,11 +736,13 @@
                     'trade_amount': $('#txt_amount').val(),
                     'duration': $('#duration').val(),
 				}
+
                 $.ajaxSetup({
                     headers: {
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                     }
                 });
+
                 $.ajax({
                     type: "POST",
                     url: "/user/trade/dcommit/" + user_id,
