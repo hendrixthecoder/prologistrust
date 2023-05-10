@@ -8,6 +8,7 @@ use Laravel\Fortify\Fortify;
 use Laravel\Jetstream\Jetstream;
 use Illuminate\Support\Facades\Hash;
 use App\Actions\Jetstream\DeleteUser;
+use App\Actions\Fortify\CreateNewUser;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Support\Facades\Redirect;
