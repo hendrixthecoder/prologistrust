@@ -15,22 +15,33 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{url('/')}}">Home</a>
+                                <a class="nav-link" href="{{url('/')}}">@lang('text.home')</a>
                                 <!-- __mPS2id _mPS2id-h mPS2id-highlight mPS2id-highlight-first mPS2id-highlight-last -->
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{url('/about')}}">About</a>
+                                <a class="nav-link" href="{{url('/about')}}">@lang('text.about')</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{url('/contact')}}">Contact</a>
+                                <a class="nav-link" href="{{url('/contact')}}">@lang('text.contact')</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{url('/login')}}">Login</a>
+                                <a class="nav-link" href="{{url('/login')}}">@lang('text.login')</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{url('/register')}}">Register</a>
+                                <a class="nav-link" href="{{url('/register')}}">@lang('text.register')</a>
                             </li>
-                            <li></li>
+                            {{-- <li class="nav-item">
+                                {{ Config::get('languages')[App::getLocale()] }}
+                                <ul class="collapse submenu list-unstyled" id="languages" data-parent="#accordionExample">
+                                    @foreach (Config::get('languages') as $lang => $language)
+                                    @if ($lang != App::getLocale())
+                                        <li>
+                                            <a href="{{ route('setUserLocale', $lang) }}">{{ $language }}</a>
+                                        </li>
+                                    @endif
+                                    @endforeach
+                                </ul>
+                            </li> --}}
                         </ul>
                     </div>
                     <div id="google_translate_element"></div>

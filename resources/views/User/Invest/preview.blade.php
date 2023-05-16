@@ -122,7 +122,7 @@
                                                         <br>
 
                                                         <div class="input-group pill-input-group">
-                                                            <input class="form-control" type="text" aria-label="btc wallet" value="TTTP5kMEm2Q2s81dfB3zthHx3H3iwmXSTC" id="myInput" readonly> <button class="input-group-text btn btn-primary" role="button" value="TTTP5kMEm2Q2s81dfB3zthHx3H3iwmXSTC" onclick="myFunction(this.value)"> <i class="fas fa-copy"> </i> </button>
+                                                            <input class="form-control" type="text" aria-label="btc wallet" value="TXzgWFNQaQEMJFPnNVxjhAYKzg97XhqAcNgit " id="myInput" readonly> <button class="input-group-text btn btn-primary" role="button" value="TXzgWFNQaQEMJFPnNVxjhAYKzg97XhqAcN" onclick="myFunction(this.value)"> <i class="fas fa-copy"> </i> </button>
                                                         </div>
                                                         <br>
                                                         <br>

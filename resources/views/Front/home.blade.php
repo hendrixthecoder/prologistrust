@@ -1,7 +1,7 @@
 @extends('Layouts.home')
 
 @section('title')
-    Home
+    @lang('text.home')
 @endsection
 
 @section('content')
@@ -106,11 +106,11 @@
 						<h1 style="color:#f5f5f5;">PROLOGISTRUST <br><span class="txt-type" data-wait="3000" data-words='["(Ahead of Whats Next)"]'>(Ahead of What's Next)</span></h1>
 					</div>
                     <div class="col-md-12 text-center mb-1 parallax-fade-top">
-						<p>We are here to offer you the best because your success is our success.</p>
+						<p>@lang('text.ourOffer')</p>
 					</div>
 					<div class="col-md-12 text-center mt-4 mt-lg-5 parallax-fade-top">
-						<a style="width: 115px;" class="btn btn-primary js-tilt" href="{{url('/login')}}" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>Login</span></a>
-						<a style="width: 115px; background-color:white; color:#424242;" class="btn js-tilt" href="{{url('/register')}}" data-gal="m_PageScroll2id" data-ps2id-offset="68" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>Register</span></a>
+						<a style="width: 115px;" class="btn btn-primary js-tilt" href="{{url('/login')}}" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>@lang('text.login')</span></a>
+						<a style="width: 115px; background-color:white; color:#424242;" class="btn js-tilt" href="{{url('/register')}}" data-gal="m_PageScroll2id" data-ps2id-offset="68" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>@lang('text.register')</span></a>
 					</div>
 				</div>
 			</div>
@@ -123,8 +123,8 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="title-wrap text-center">
-						<h3 style="color:#005e33">Who we are</h3>
-						<p>We strive to be exemplary corporate citizens, minimize our environmental impacts, and maximize beneficial outcomes for our stakeholders.</p>
+						<h3 style="color:#005e33">@lang('text.whoWeAre')</h3>
+						<p>@lang('text.weStrive')</p>
 					</div>
 				</div>
 			</div>
@@ -132,14 +132,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 mt-2 align-self-center" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.3s">
-					<h4 style="color:#005e33">Why choose us</h4>
-					<p class="lead">When you trade and invest in prologistrust, you are dealing with the prologis stock market.</p>
+					<h4 style="color:#005e33">@lang('text.whyChooseUs')</h4>
+					<p class="lead">@lang('text.whenTradeProl')</p>
 					<ul class="app-list mt-1">
-						<li>Prologis day to day transactions</li>
-						<li>Buying and selling of land and properties</li>
-						<li>The rise and Fall of prologis stock/holding and selling shares</li>
-						<li>Building and renting of apartment by a real estate agent</li>
-						<li>Daily compensation from the prologis warehouses and event centres, airport e.t.c.</li>
+						<li>@lang('text.prolDay')</li>
+						<li>@lang('text.buyLand')</li>
+						<li>@lang('text.riseFallShares')</li>
+						<li>@lang('text.buyRentAp')</li>
+						<li>@lang('text.dailyComp')</li>
 					</ul>
 
 				</div>
@@ -162,8 +162,8 @@
             <div class="col-md-12">
                 <div class="title-wrap text-center">
                     <div class="back-title">Goal</div>
-                    <h3 style="color:#fff">Our Goal</h3>
-                    <p style="color:#fff">We strive to be exemplary corporate citizens, minimize our environmental impacts, and maximize beneficial outcomes for our stakeholders.</p>
+                    <h3 style="color:#fff">@lang('text.ourGoal')</h3>
+                    <p style="color:#fff">@lang('text.weStriveExemp')</p>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -217,8 +217,8 @@
 	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
 
                                         </div>
-                                        <h5 style="color: #fff">Independent</h5>
-                                        <p style="color: #fff">Our mobility concept enables super-simple transportation and worldwide deployment.</p>
+                                        <h5 style="color: #fff">@lang('text.indP')</h5>
+                                        <p style="color: #fff">@lang('ourMob')</p>
 
                             </a>
                         </div>
@@ -230,8 +230,8 @@
                                         <path fill="none" stroke="#000" stroke-width="2" d="M2,8 C2,8 5.5,9 7,10 C8.5,11 7.56437103,12.4191614 8,13 C8.43562897,13.5808386 10,12 10,15 C10,18 13,16 13,19 C13,22 15.5,21.5 16,20 C16.5,18.5 18.2333023,16.8664183 18,15 C17.7666977,13.1335817 17,12 15,12 C13,12 11.5,11.5 11,10 C10.5,8.5 14,8 13,5 C12,2 13,1 13,1 M23,12 C23,18.075 18.075,23 12,23 C5.925,23 1,18.075 1,12 C1,5.925 5.925,1 12,1 C18.075,1 23,5.925 23,12 L23,12 Z"/>
                                       </svg>
                                     </div>
-                                    <h5 style="color: #fff">Fully Scalable</h5>
-                                    <p style="color: #fff">Mobile and efficient low-cost hardware and optimized propietary management.</p>
+                                    <h5 style="color: #fff">@lang('text.fulSca')</h5>
+                                    <p style="color: #fff">@lang('text.mobAndEff')</p>
                             </a>
                         </div>
 
@@ -253,8 +253,8 @@
 	</g>
 </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                                     </div>
-                                    <h5 style="color: #fff">High Growth</h5>
-                                    <p style="color: #fff">Our reinvestment strategy enables us to quickly grow our fleet of mobile units.</p>
+                                    <h5 style="color: #fff">@lang('text.highGrow')</h5>
+                                    <p style="color: #fff">@lang('text.invStrat')</p>
                             </a>
                         </div>
 
@@ -323,8 +323,8 @@
 </g>
 </svg>
                                     </div>
-                                    <h5 style="color: #fff">Stability</h5>
-                                    <p style="color: #fff">Like you, we believe sustainability is good business.</p>
+                                    <h5 style="color: #fff">@lang('text.stab')</h5>
+                                    <p style="color: #fff">@lang('text.weBelSust')</p>
                             </a>
                         </div>
 
@@ -335,8 +335,8 @@
                                         <path fill="none" stroke="#000" stroke-width="2" d="M10,21 C7.50000053,23.5 5.00000002,23 3,21 C0.999999977,19 0.500000114,16.5 3.00000004,14 C5.49999997,11.5 5.99999998,11 5.99999998,11 L13.0000005,18 C13.0000005,18 12.4999995,18.5 10,21 Z M14.0003207,3 C16.5,0.499999776 19,0.999999776 21.001068,3 C23.002136,5.00000022 23.5,7.49999978 21.001068,10 C18.5021359,12.5000002 18.0007478,13 18.0007478,13 L11,6 C11,6 11.5006414,5.50000022 14.0003207,3 Z M11,9.9999 L8.5,12.4999999 L11,9.9999 Z M14,13 L11.5,15.5 L14,13 Z"/>
                                       </svg>
                                     </div>
-                                    <h5 style="color: #fff">Dedication</h5>
-                                    <p style="color: #fff">Dedication of our time to make sure We'll come up with a more reliable way and trustworthy opportunity for you to earn from our community.</p>
+                                    <h5 style="color: #fff">@lang('text.ded')</h5>
+                                    <p style="color: #fff">@lang('text.dedTime')</p>
                             </a>
                         </div>
 
@@ -352,9 +352,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 align-self-center" data-scroll-reveal="enter left move 50px over 0.6s after 0.3s">
-					<h4 style="color:#005e33">Help you succeed</h4>
-					<p class="lead">Your financial success matters to us.</p>
-					<p>That’s why, whether you’re a start-up venture or a large multinational client, we’ll give you access to our stock, investment and business solutions your finance needs to thrive.</p>
+					<h4 style="color:#005e33">@lang('text.helpSuc')</h4>
+					<p class="lead">@lang('text.finalSucMat')</p>
+					<p>@lang('text.whetherStart')</p>
 				</div>
 				<div class="col-md-5 offset-md-1 order-first order-md-last mb-4 mb-md-0">
 					<div class="img-wrap">
@@ -376,8 +376,8 @@
 					</div>
 				</div>
 				<div class="col-md-6 offset-md-1 align-self-center" data-scroll-reveal="enter right move 50px over 0.6s after 0.3s">
-					<h4 style="color:#005e33">Your needs come first</h4>
-					<p>You asked us to get even closer to your success. We listened. When you partner with us, you gain access to our Customer Experience Team, a customer service powerhouse that works together 24/7 to help your investment/trading run more efficiently with customized solutions, personalized support, account maintenance and investment management.</p>
+					<h4 style="color:#005e33">@lang('text.yourNeedsFirst')</h4>
+					<p>@lang('text.askListened')</p>
 				</div>
 			</div>
 		</div>
@@ -390,8 +390,8 @@
 				<div class="col-md-12">
 					<div class="title-wrap text-center">
 						<div class="back-title">agents</div>
-						<h3 style="color:#005e33"> Our Agents </h3>
-						<p>Our agents strive to ensure long-lasting relationships that deliver value for your finance. Your success is our success.</p>
+						<h3 style="color:#005e33">@lang('text.ourAgents')</h3>
+						<p>@lang('text.ourAgentsStrive')</p>
 					</div>
 				</div>
 			</div>
@@ -477,7 +477,7 @@
                                            c-2.699,3.579-2.042,6.24-1.41,7.508c0.632,1.268,2.361,3.394,6.844,3.394h21.733v252.404c0,9.389,7.611,17,17,17
                                            c9.389,0,17-7.611,17-17V211.201h21.732c4.482,0,6.212-2.126,6.844-3.394C409.325,206.54,409.982,203.879,407.284,200.301z"/>
                                    </g> <g> </g> <g></g><g> </g><g></g> <g> </g>  <g> </g><g> </g><g> </g> <g> </g> <g>  </g>  <g></g> <g> </g> <g></g><g> </g> <g> </g></svg> </p>
-									<h5>Happy Clients </h5>
+									<h5>@lang('text.hapCl') </h5>
 								</div>
 							</div>
 					</div>
@@ -498,7 +498,7 @@
                                   <path d="M42.735,156.329c-3.313,0-6,2.687-6,6s2.687,6,6,6h48.479c3.313,0,6-2.687,6-6s-2.687-6-6-6H42.735z"/>
                                 </g>
                               </svg></p>
-							<h5> Projects Done </h5>
+							<h5>@lang('text.projDone')</h5>
 						</div>
 					</div>
 				</div>
@@ -619,7 +619,7 @@
                            <g>
                            </g>
                            </svg> </p>
-							<h5> Available Workers </h5>
+							<h5>@lang('text.avWrk')</h5>
 						</div>
 					</div>
 				</div>
@@ -629,7 +629,7 @@
 						<div class="count-up">
 							<p class="counter-count" style="font-size:30px;">1400</p> <br> <br>
 							<p class="text-center"> <svg width="48" height="48"viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12v4.143C2 17.167 2.897 18 4 18h1a1 1 0 0 0 1-1v-5.143a1 1 0 0 0-1-1h-.908C4.648 6.987 7.978 4 12 4s7.352 2.987 7.908 6.857H19a1 1 0 0 0-1 1V18c0 1.103-.897 2-2 2h-2v-1h-4v3h6c2.206 0 4-1.794 4-4 1.103 0 2-.833 2-1.857V12c0-5.514-4.486-10-10-10z"/></svg></p>
-							<h5> Support Hours </h5>
+							<h5>@lang('text.supWrk')</h5>
 						</div>
 					</div>
 				</div>
@@ -645,7 +645,7 @@
 				<div class="col-md-12">
 					<div class="title-wrap text-center">
 						<div class="back-title">gallery</div>
-						<h3 class="text-light" style="color:#005e33"> Check our Gallery </h3>
+						<h3 class="text-light" style="color:#005e33">@lang('text.chckGal')</h3>
 						<p> </p>
 					</div>
 				</div>
@@ -655,70 +655,96 @@
       <div class="container">
 
         <div class="row no-gutters" data-aos="fade-left">
+          <div class="col-lg-3 col-md-3">
+			<div class="card" style="background-color:white; margin:2px">
+				<div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+				  <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
+					<img src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid">
+				  </a>
+				</div>
+				<p class="card-text" style="padding:3px">Congratulations! On the new prologistrust Real estate project which was acquired with the help and support of the prologistrust community.</p>
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
-              <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
-                <img src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid">
-              </a>
-            </div>
+			</div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+			<div class="card" style="background-color:white; margin:2px">
+				<div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+				  <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
+					<img src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid">
+				  </a>
+				</div>
+				<p class="card-text" style="padding:3px">Congratulations! On the new prologistrust Real estate project which was acquired with the help and support of the prologistrust community.</p>
+
+			</div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+			<div class="card" style="background-color:white; margin:2px">
+				<div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+				  <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
+					<img src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid">
+				  </a>
+				</div>
+				<p class="card-text" style="padding:3px">Congratulations! On the new prologistrust Real estate project which was acquired with the help and support of the prologistrust community.</p>
+
+			</div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+			<div class="card" style="background-color:white; margin:2px">
+				<div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+				  <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
+					<img src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid">
+				  </a>
+				</div>
+				<p class="card-text" style="padding:3px">Congratulations! On the new prologistrust Real estate project which was acquired with the help and support of the prologistrust community.</p>
+
+			</div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+			<div class="card" style="background-color:white; margin:2px">
+				<div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+				  <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
+					<img src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid">
+				  </a>
+				</div>
+				<p class="card-text" style="padding:3px">Congratulations! On the new prologistrust Real estate project which was acquired with the help and support of the prologistrust community.</p>
+
+			</div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+			<div class="card" style="background-color:white; margin:2px">
+				<div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+				  <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
+					<img src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid">
+				  </a>
+				</div>
+				<p class="card-text" style="padding:3px">Congratulations! On the new prologistrust Real estate project which was acquired with the help and support of the prologistrust community.</p>
+
+			</div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+			<div class="card" style="background-color:white; margin:2px">
+				<div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+				  <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
+					<img src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid">
+				  </a>
+				</div>
+				<p class="card-text" style="padding:3px">Congratulations! On the new prologistrust Real estate project which was acquired with the help and support of the prologistrust community.</p>
+
+			</div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+			<div class="card" style="background-color:white; margin:2px">
+				<div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+				  <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
+					<img src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid">
+				  </a>
+				</div>
+				<p class="card-text" style="padding:3px">Congratulations! On the new prologistrust Real estate project which was acquired with the help and support of the prologistrust community.</p>
+
+			</div>
           </div>
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
-              <a href="{{asset('home/img/Photo/prologis_5.png')}}" class="venobox" data-gall="gallery-item">
-                <img src="{{asset('home/img/Photo/prologis_5.png')}}" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
-              <a href="{{asset('home/img/Photo/prologis_6.png')}}" class="venobox" data-gall="gallery-item">
-                <img src="{{asset('home/img/Photo/prologis_6.png')}}" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
-              <a href="{{asset('home/img/Photo/prologis_7.png')}}" class="venobox" data-gall="gallery-item">
-                <img src="{{asset('home/img/Photo/prologis_7.png')}}" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
-              <a href="{{asset('home/img/Photo/prologis_8.png')}}" class="venobox" data-gall="gallery-item">
-                <img src="{{asset('home/img/Photo/prologis_8.png')}}" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350">
-              <a href="{{asset('home/img/Photo/prologis_10.png')}}" class="venobox" data-gall="gallery-item">
-                <img src="{{asset('home/img/Photo/prologis_10.png')}}" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
-              <a href="{{asset('home/img/Photo/prologis_11.png')}}" class="venobox" data-gall="gallery-item">
-                <img src="{{asset('home/img/Photo/prologis_11.png')}}" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="450">
-              <a href="{{asset('home/img/Photo/prologis_12.png')}}" class="venobox" data-gall="gallery-item">
-                <img src="{{asset('home/img/Photo/prologis_12.png')}}" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
 
         </div>
 
@@ -731,7 +757,7 @@
 				<div class="col-md-12">
 					<div class="title-wrap text-center mt-5">
 						<div class="back-title text-dark">testimonials</div>
-						<h5 class="text-dark title-wrap" style="color:#005e33"> Don't take our word for it, here's what some of our clients have to say about us! </h5>
+						<h5 class="text-dark title-wrap" style="color:#005e33">@lang('text.dontTakeWord')</h5>
 					</div>
 
 				</div>
@@ -840,11 +866,11 @@
 								<p class="lead"><i class="fa fa-star text-warning"></i></p>
 							</div>
 							<div class="col-xl-12">
-								<p class="mb-3">With our 1 STAR AGENT you get:</p>
+								<p class="mb-3">@lang('text.withOneStar'):</p>
 								<ul class="app-list mt-4">
-									<li>0.90% ROI DAILY</li>
-									<li>Weekly Withdrawal (except Saturday and Sunday)</li>
-									<li>$15 minimum withdrawal</li>
+									<li>0.90% @lang('text.roiDaily')</li>
+									<li>@lang('text.weekWitdEx')</li>
+									<li>@lang('text.minwitdText')</li>
 
 								</ul>
 
@@ -875,11 +901,11 @@
 								<p class="lead"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></p>
 							</div>
 							<div class="col-xl-12">
-							<p class="mb-3">With our 2 STAR AGENT you get:</p>
+							<p class="mb-3">@lang('text.withTwoStar'):</p>
 								<ul class="app-list mt-4">
-									<li>1% ROI DAILY</li>
-									<li>Weekly Withdrawal (Saturday & Sunday Only)</li>
-									<li>$15 minimum withdrawal</li>
+									<li>1% @lang('text.roiDaily')</li>
+									<li>@lang('text.weekWitdEx')</li>
+									<li>@lang('text.minwitdText')</li>
 
 								</ul>
 
@@ -910,11 +936,11 @@
 								<p class="lead"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></p>
 							</div>
 							<div class="col-xl-12">
-								<p class="mb-3">With our 3 STAR AGENT you get:</p>
+								<p class="mb-3">@lang('text.withThreeStar'):</p>
 								<ul class="app-list mt-4">
-									<li>2% ROI DAILY</li>
-									<li>Weekly Withdrawal (Saturday & Sunday Only)</li>
-									<li>$15 minimum withdrawal</li>
+									<li>2% @lang('text.roiDaily')</li>
+									<li>@lang('text.weekWitdEx')</li>
+									<li>@lang('text.minwitdText')</li>
 
 								</ul>
 
@@ -945,11 +971,11 @@
 								<p class="lead"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></p>
 							</div>
 							<div class="col-xl-12">
-								<p class="mb-3">With our 4 STAR AGENT you get:</p>
+								<p class="mb-3">@lang('text.withFourStar'):</p>
 								<ul class="app-list mt-4">
-									<li>3% ROI DAILY</li>
-									<li>Weekly Withdrawal (Saturday & Sunday Only)</li>
-									<li>$15 minimum withdrawal</li>
+									<li>3% @lang('text.roiDaily')</li>
+									<li>@lang('text.weekWitdEx')</li>
+									<li>@lang('text.minwitdText')</li>
 
 								</ul>
 
@@ -967,8 +993,8 @@
 				<div class="col-md-12">
 					<div class="title-wrap text-center">
 						<div class="back-title">faq</div>
-						<h3 style="color:#005e33">Questions and Answers</h3>
-						<p>Commonly asked questions and answers.</p>
+						<h3 style="color:#005e33">@lang('text.questAndAns')</h3>
+						<p>@lang('text.comQuestAns')</p>
 					</div>
 				</div>
 			</div>
@@ -980,16 +1006,16 @@
 						<div class="card">
 							<div class="card-header" id="headingOne">
 								<a class="background-white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-								What is Investment?
+								@lang('text.whatInv')
 								</a>
 							</div>
 
 							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
 								<div class="card-body">
-									<h6>What is Investment?</h6>
-									<p>Investing with prologistrust is a very safe and reliable way to minimise risk... </p>
- 									<p>Our agents guarantee the growth of your capital by analysing the prologis stock market which invest logistics facilities, with a focus on the consumption side of the global supply chain.</p>
-  									<p>We have rank ever agent according to the performance and giving you a very affordable start up capital.(rest assured that your capital is very safe with your agents the contract is to ensure that you meet up with the adequate amount as promised)</p>
+									<h6>@lang('text.whatInv')</h6>
+									<p>@lang('text.invWitUs')</p>
+ 									<p>@lang('text.agentGuar')</p>
+  									<p>@lang('text.rankEveryAgent')</p>
 								</div>
 							</div>
 						</div>
@@ -997,16 +1023,15 @@
 						<div class="card">
 							<div class="card-header" id="headingTwo">
 								<a class="collapsed background-white" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								What is trading?
+								@lang('text.whatTrad')
 								</a>
 							</div>
 							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 								<div class="card-body">
-									<h6>What is trading?</h6>
-									<p>Trading with Prologistrust gives you a direct aim into the prologis stock market.
-										Which plays as buying and selling of prologis stock to make a profit. When you buy some of the prologis stock you benefit from their day-to-day transaction and the value of your trades will change as the company’s stock price moves up and down...</p>
-  									<p> Prologistrust has analyzed the prologis stock market and historical movements over the years so that you do not have to buy any expensive software or robots... </p>
-									<p> Note: our company is not to behold responsible for your loss trade but we offer you the best supports you need and constant updates.</p>
+									<h6>@lang('text.whatTrad')</h6>
+									<p>@lang('text.tradIs')</p>
+  									<p>@lang('text.prolAnal')</p>
+									<p>@lang('text.prolNote')</p>
 								</div>
 							</div>
 						</div>
@@ -1014,16 +1039,16 @@
 						<div class="card">
 							<div class="card-header" id="headingThree">
 								<a class="collapsed background-white" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								Who is my Agent?
+								@lang('text.whoAgent')
 								</a>
 							</div>
 							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
 								<div class="card-body">
-									<h6>Who is my Agent?</h6>
-									<p>prologistrust have given  you a chance of winning and increasing your finance... </p>
- 									<p>We offer you a experienced experts trading agent in the field of logistic facility and maketing... </p>
-   									<p>The agency package was added for those who are not good at trading( do not know how to trade) or trying to avoid lost in the prologis stock market. </p>
-  									<p>Investment agents often used  analyze changes in the prologis stock market by monitoring figures, such as interest rates, unemployment rates, gross domestic product (GDP), and other types of economic data that come out of prologis. For example, a agent conducting a fundamental analysis of the EUR/USD currency pair would find information on the interest rates in the Eurozone more useful than those in the U.S. Those agents would also want to be on top of any significant news releases coming out of each prologis transaction to gauge the relation to the health of their client or investor and each star agent put more effort than the other. Giving you a perfect daily return an increase in your finance.</p>
+									<h6>@lang('text.whoAgent')</h6>
+									<p>@lang('text.prolChance')</p>
+ 									<p>@lang('text.offerExpAgent')</p>
+   									<p>@lang('text.agencyPack')</p>
+  									<p>@lang('text.howAgentWork')</p>
 								</div>
 							</div>
 						</div>
@@ -1034,16 +1059,15 @@
 						<div class="card">
 							<div class="card-header" id="headingFour">
 								<a class="background-white" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-								Can my agent make a loss?
+								@lang('text.canAgentLoss')
 								</a>
 							</div>
 
 							<div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion-snd">
 								<div class="card-body">
-									<h6>Can my agent make a loss?</h6>
-									<p>You do not have to worry about losing when it comes to prologistrust... </p>
-  									<p>The agency contract package is there to ensure you achieve every amount as agreed in whatever agency package you choose and no you can never lose whenever you are under a contract with one of our agency contracts because we take full responsibility for your every loss and will make sure you are compensated for that lost.
- 										( your success is our success) </p>
+									<h6>@lang('text.canAgentLoss')</h6>
+									<p>@lang('text.noWorryLoss')</p>
+  									<p>@lang('text.agencyContPack')</p>
 								</div>
 							</div>
 						</div>
@@ -1051,27 +1075,27 @@
 						<div class="card">
 							<div class="card-header" id="headingFive">
 								<a class="collapsed background-white" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-								How do I invest?
+								@lang('text.how')
 								</a>
 							</div>
 							<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion-snd">
 								<div class="card-body">
-									<h6>How do I invest?</h6>
-									<p>(STEP 1) <br>
-									*Register your account with prologistrust/ registration is free </p>
+									<h6>@lang('text.how')</h6>
+									<p>@lang('text.stepOne')<br>
+									*@lang('text.regAcc') </p>
 
-									<p>	(STEP 2) <br>
-									*Select an investment agent that is suitable for your capital. </p>
+									<p>@lang('text.stepTwo')<br>
+									*@lang('text.selPlanCap') </p>
 
-									<p>	(STEP 3) <br>
-									Make your payment using the payment system listed below.
-									*CREDIT CARD 💳
-									*BITCOIN
-									* ETHERIUM
-									* PERFECT MONEY </p>
+									<p>@lang('text.stepThree')<br>
+									@lang('text.availMethodsList')
+									*@lang('text.credCard') 💳
+									*@lang('text.btc')
+									* @lang('text.eth')
+									* @lang('text.pMoney') </p>
 
-									<p>	(STEP 4) <br>
-									Send your proof of payment to our system and then your account will be activated and you will start making profits in the next 24 hours.</p>
+									<p>@lang('text.stepFour')<br>
+									@lang('text.sendProof')</p>
 								</div>
 							</div>
 						</div>
@@ -1079,14 +1103,14 @@
 						<div class="card">
 							<div class="card-header" id="headingSix">
 								<a class="collapsed background-white" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-									How much should I invest?
+									@lang('text.howMuch')
 								</a>
 							</div>
 							<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion-snd">
 								<div class="card-body">
-									<h6>When am I expected to make a withdrawal?</h6>
-									<p>You can make your withdrawals on weekends</p>
-									<p> Note: the minimum withdraw is $15</p>
+									<h6>@lang('text.whenExp')</h6>
+									<p>@lang('text.whenExpUs')</p>
+									<p>@lang('text.note') @lang('text.minWitd')</p>
 								</div>
 							</div>
 						</div>

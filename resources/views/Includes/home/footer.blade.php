@@ -3,20 +3,20 @@
     <div class="container padding-bottom-big">
         <div class="row justify-content-between">
             <div class="col-lg-4">
-                <h6 class="text-white mb-4">Stay tunned:</h6>
+                <h6 class="text-white mb-4">@lang('text.stayTuned')</h6>
                 <div class="suscribe">
-                    <input class="form-control text-left" placeholder="Enter your email" type="text" name="name" />
-                    <button type="submit" class="btn btn-primary m-0 js-tilt" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>Subscribe</span></button>
+                    <input class="form-control text-left" placeholder="@lang('text.enterEmail')" type="text" name="name" />
+                    <button type="submit" class="btn btn-primary m-0 js-tilt" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>@lang('text.sub')</span></button>
                 </div>
-                <p class="text-left text-white mb-0"><small>* we promise that we won´t spam you, never.</small></p>
+                <p class="text-left text-white mb-0"><small>* @lang('text.promNoSpam')</small></p>
             </div>
             <div class="col-lg-5 mt-4">
                 <ul class="footer-list">
-                    <li class="text-left"><a href="{{url('/')}}">Home</a></li>
-                    <li class="text-left"><a href="{{url('/about')}}">About</a></li>
-                    <li class="text-left"><a href="{{url('/contact')}}">Contact</a></li>
-                    <li class="text-left"><a href="{{url('/login')}}">Login</a></li>
-                    <li class="text-left"><a href="{{url('/register')}}">Register</a></li>
+                    <li class="text-left"><a href="{{url('/')}}">@lang('text.home')</a></li>
+                    <li class="text-left"><a href="{{url('/about')}}">@lang('text.about')</a></li>
+                    <li class="text-left"><a href="{{url('/contact')}}">@lang('text.contact')</a></li>
+                    <li class="text-left"><a href="{{url('/login')}}">@lang('text.login')</a></li>
+                    <li class="text-left"><a href="{{url('/register')}}">@lang('text.register')</a></li>
                 </ul>
             </div>
         </div>
