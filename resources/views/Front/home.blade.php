@@ -161,7 +161,7 @@
 		<div class="container mb-5">
             <div class="col-md-12">
                 <div class="title-wrap text-center">
-                    <div class="back-title">Goal</div>
+                    <div class="back-title">@lang('text.ourGoal')</div>
                     <h3 style="color:#fff">@lang('text.ourGoal')</h3>
                     <p style="color:#fff">@lang('text.weStriveExemp')</p>
                 </div>
@@ -389,7 +389,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="title-wrap text-center">
-						<div class="back-title">agents</div>
+						<div class="back-title">@lang('text.ourAgents')</div>
 						<h3 style="color:#005e33">@lang('text.ourAgents')</h3>
 						<p>@lang('text.ourAgentsStrive')</p>
 					</div>
@@ -644,7 +644,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="title-wrap text-center">
-						<div class="back-title">gallery</div>
+						<div class="back-title">@lang('text.chckGal')</div>
 						<h3 class="text-light" style="color:#005e33">@lang('text.chckGal')</h3>
 						<p> </p>
 					</div>
@@ -656,90 +656,89 @@
 
         <div class="row no-gutters" data-aos="fade-left">
           <div class="col-lg-3 col-md-3">
-			<div class="card" style="background-color:white; margin:2px">
+			<div class="card" style="border-radius:10px;background-color:white; margin:2px;">
+				<div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+				  <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
+					<img style="ob" src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid card-img-top">
+				  </a>
+				</div>
+					<p class="card-text" style="padding:10px; font-size:0.8rem">@lang('text.congratsSale')</p>
+			</div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+			<div class="card" style="border-radius:10px; background-color:white; margin:2px">
 				<div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
 				  <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
 					<img src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid">
 				  </a>
 				</div>
-				<p class="card-text" style="padding:3px">Congratulations! On the new prologistrust Real estate project which was acquired with the help and support of the prologistrust community.</p>
+				<p class="card-text" style="padding:10px; font-size:0.8rem">@lang('text.congratsSale')</p>
 
 			</div>
           </div>
           <div class="col-lg-3 col-md-3">
-			<div class="card" style="background-color:white; margin:2px">
+			<div class="card" style="border-radius:10px; background-color:white; margin:2px">
 				<div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
 				  <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
 					<img src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid">
 				  </a>
 				</div>
-				<p class="card-text" style="padding:3px">Congratulations! On the new prologistrust Real estate project which was acquired with the help and support of the prologistrust community.</p>
+				<p class="card-text" style="padding:10px; font-size:0.8rem">@lang('text.congratsSale')</p>
 
 			</div>
           </div>
           <div class="col-lg-3 col-md-3">
-			<div class="card" style="background-color:white; margin:2px">
+			<div class="card" style="border-radius:10px; background-color:white; margin:2px">
 				<div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
 				  <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
 					<img src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid">
 				  </a>
 				</div>
-				<p class="card-text" style="padding:3px">Congratulations! On the new prologistrust Real estate project which was acquired with the help and support of the prologistrust community.</p>
+				<p class="card-text" style="padding:10px; font-size:0.8rem">@lang('text.congratsSale')</p>
 
 			</div>
           </div>
           <div class="col-lg-3 col-md-3">
-			<div class="card" style="background-color:white; margin:2px">
+			<div class="card" style="border-radius:10px; background-color:white; margin:2px">
 				<div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
 				  <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
 					<img src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid">
 				  </a>
 				</div>
-				<p class="card-text" style="padding:3px">Congratulations! On the new prologistrust Real estate project which was acquired with the help and support of the prologistrust community.</p>
+				<p class="card-text" style="padding:10px; font-size:0.8rem">@lang('text.congratsSale')</p>
 
 			</div>
           </div>
           <div class="col-lg-3 col-md-3">
-			<div class="card" style="background-color:white; margin:2px">
+			<div class="card" style="border-radius:10px; background-color:white; margin:2px">
 				<div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
 				  <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
 					<img src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid">
 				  </a>
 				</div>
-				<p class="card-text" style="padding:3px">Congratulations! On the new prologistrust Real estate project which was acquired with the help and support of the prologistrust community.</p>
+				<p class="card-text" style="padding:10px; font-size:0.8rem">@lang('text.congratsSale')</p>
 
 			</div>
           </div>
           <div class="col-lg-3 col-md-3">
-			<div class="card" style="background-color:white; margin:2px">
+			<div class="card" style="border-radius:10px; background-color:white; margin:2px">
 				<div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
 				  <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
 					<img src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid">
 				  </a>
 				</div>
-				<p class="card-text" style="padding:3px">Congratulations! On the new prologistrust Real estate project which was acquired with the help and support of the prologistrust community.</p>
+				<p class="card-text" style="padding:10px; font-size:0.8rem">@lang('text.congratsSale')</p>
 
 			</div>
           </div>
           <div class="col-lg-3 col-md-3">
-			<div class="card" style="background-color:white; margin:2px">
+			<div class="card" style="border-radius:10px; background-color:white; margin:2px">
 				<div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
 				  <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
 					<img src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid">
 				  </a>
 				</div>
-				<p class="card-text" style="padding:3px">Congratulations! On the new prologistrust Real estate project which was acquired with the help and support of the prologistrust community.</p>
-
-			</div>
-          </div>
-          <div class="col-lg-3 col-md-3">
-			<div class="card" style="background-color:white; margin:2px">
-				<div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
-				  <a href="{{asset('home/img/Photo/prologis_9.png')}}" class="venobox" data-gall="gallery-item">
-					<img src="{{asset('home/img/Photo/prologis_9.png')}}" alt="" class="img-fluid">
-				  </a>
-				</div>
-				<p class="card-text" style="padding:3px">Congratulations! On the new prologistrust Real estate project which was acquired with the help and support of the prologistrust community.</p>
+				<p class="card-text" style="padding:10px; font-size:0.8rem">@lang('text.congratsSale')</p>
 
 			</div>
           </div>
@@ -756,7 +755,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="title-wrap text-center mt-5">
-						<div class="back-title text-dark">testimonials</div>
+						<div class="back-title text-dark">@lang('text.testimonial')</div>
 						<h5 class="text-dark title-wrap" style="color:#005e33">@lang('text.dontTakeWord')</h5>
 					</div>
 
@@ -992,7 +991,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="title-wrap text-center">
-						<div class="back-title">faq</div>
+						<div class="back-title">@lang('text.faq')</div>
 						<h3 style="color:#005e33">@lang('text.questAndAns')</h3>
 						<p>@lang('text.comQuestAns')</p>
 					</div>

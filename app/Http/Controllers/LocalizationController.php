@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Session;
 
 class LocalizationController extends Controller
 {
@@ -12,9 +14,13 @@ class LocalizationController extends Controller
 
         if(array_key_exists($locale, Config::get('languages'))){
             App::setLocale($locale);
-            $user = $request->user();
-            $user->locale = $locale;
-            $user->save();
+            if(Auth::check()){
+                $user = $request->user();
+                $user->locale = $locale;
+                $user->save();
+
+            }
+            Session::put('locale', $locale);
 
         }else{
             return back()->with('error', 'Language not found');

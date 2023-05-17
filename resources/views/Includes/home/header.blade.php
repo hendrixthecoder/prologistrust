@@ -14,34 +14,34 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{url('/')}}">@lang('text.home')</a>
+                            <li class="nav-item use">
+                                <a class="nav-link" style="color:black" href="{{url('/')}}">@lang('text.home')</a>
                                 <!-- __mPS2id _mPS2id-h mPS2id-highlight mPS2id-highlight-first mPS2id-highlight-last -->
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item use">
                                 <a class="nav-link" href="{{url('/about')}}">@lang('text.about')</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item use">
                                 <a class="nav-link" href="{{url('/contact')}}">@lang('text.contact')</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item use">
                                 <a class="nav-link" href="{{url('/login')}}">@lang('text.login')</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item use">
                                 <a class="nav-link" href="{{url('/register')}}">@lang('text.register')</a>
                             </li>
-                            {{-- <li class="nav-item">
-                                {{ Config::get('languages')[App::getLocale()] }}
-                                <ul class="collapse submenu list-unstyled" id="languages" data-parent="#accordionExample">
+                            <li class="nav-item" id="ref">
+                                <span class="nav-link">{{ Config::get('languages')[App::getLocale()] }}</span>
+                                <ul class="collapse submenu list-unstyled" id="languages" data-parent="#accordionExample" style="display: none">
                                     @foreach (Config::get('languages') as $lang => $language)
                                     @if ($lang != App::getLocale())
                                         <li>
-                                            <a href="{{ route('setUserLocale', $lang) }}">{{ $language }}</a>
+                                            <a href="{{ route('setUserLocaleUnAuth', $lang) }}">{{ $language }}</a>
                                         </li>
                                     @endif
                                     @endforeach
                                 </ul>
-                            </li> --}}
+                            </li>
                         </ul>
                     </div>
                     <div id="google_translate_element"></div>
@@ -50,3 +50,17 @@
         </div>
     </div>
 </div>
+<style>
+    .nav-link {
+        color:black;
+    }
+
+</style>
+
+<script>
+    $(document).ready(() => {
+        $('#ref').on('click', () => {
+            $('#languages').toggle()
+        })
+    })
+</script>

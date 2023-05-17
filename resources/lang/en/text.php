@@ -205,10 +205,9 @@
         'home' => 'Home',
         'about' => 'About',
         'contact' => 'Contact',
-        
-
-
-
+        'congratsSale' => 'Congratulations! On the new prologistrust Real estate project which was acquired with the help and support of the prologistrust community.',
+        'testimonial' => 'Testimonial',
+        'faq' => 'FAQ',
     ]
 
 
