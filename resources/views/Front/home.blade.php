@@ -109,8 +109,8 @@
 						<p>@lang('text.ourOffer')</p>
 					</div>
 					<div class="col-md-12 text-center mt-4 mt-lg-5 parallax-fade-top">
-						<a style="width: 115px;" class="btn btn-primary js-tilt" href="{{url('/login')}}" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>@lang('text.login')</span></a>
-						<a style="width: 115px; background-color:white; color:#424242;" class="btn js-tilt" href="{{url('/register')}}" data-gal="m_PageScroll2id" data-ps2id-offset="68" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>@lang('text.register')</span></a>
+						<a style="" class="btn btn-primary js-tilt" href="{{url('/login')}}" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>@lang('text.login')</span></a>
+						<a style="background-color:white; color:#424242;" class="btn js-tilt" href="{{url('/register')}}" data-gal="m_PageScroll2id" data-ps2id-offset="68" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>@lang('text.register')</span></a>
 					</div>
 				</div>
 			</div>
