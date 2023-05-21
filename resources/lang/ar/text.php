@@ -205,8 +205,9 @@
         'home' => 'بيت',
         'about' => 'عن',
         'contact' => 'اتصال',
-        'congratsSale' => 'تهانينا!في مشروع ProLogistrust العقاري الجديد الذي تم الحصول عليه بمساعدة ودعم مجتمع Prologistrust.'
-        
+        'congratsSale' => 'تهانينا!في مشروع ProLogistrust العقاري الجديد الذي تم الحصول عليه بمساعدة ودعم مجتمع Prologistrust.',
+        'testimonial' => 'شهادة',
+        'faq' => 'التعليمات',
 
     ]
 

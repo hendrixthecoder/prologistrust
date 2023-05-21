@@ -14,6 +14,7 @@ class LocalizationController extends Controller
 
         if(array_key_exists($locale, Config::get('languages'))){
             App::setLocale($locale);
+            //Check if request user is authenticated, if yes change their locale of not put it in the session only
             if(Auth::check()){
                 $user = $request->user();
                 $user->locale = $locale;
