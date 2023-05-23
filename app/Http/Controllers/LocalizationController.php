@@ -19,8 +19,8 @@ class LocalizationController extends Controller
                 $user = $request->user();
                 $user->locale = $locale;
                 $user->save();
-
             }
+            
             Session::put('locale', $locale);
 
         }else{
