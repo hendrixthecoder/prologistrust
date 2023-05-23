@@ -1,4 +1,4 @@
-+@extends('Layouts.home')
+@extends('Layouts.home')
 
 @section('title')
     @lang('text.home')
