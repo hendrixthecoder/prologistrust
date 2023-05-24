@@ -78,7 +78,53 @@ Route::get('/withlimit/reset', ['App\Http\Controllers\Admin\PlansController', 'r
 
 //  <------------------- User Routes ----------------->
 
+Route::group(['middleware' => ['auth', 'verified']],function () {
+    Route::get('/user/dashboard', ['App\Http\Controllers\DashboardController', 'dashboard']);
 
+    Route::get('user/lang/{locale}', [LocalizationController::class, 'setLocale'])->name('setUserLocale');
+
+    Route::get('/user/profile', ['App\Http\Controllers\UserController', 'profile'])->name('user.profile');
+    Route::put('/user/updatepersonal/{id}', ['App\Http\Controllers\UserController', 'updatepersonal']);
+    Route::put('/user/updateppic/{id}', ['App\Http\Controllers\UserController', 'updateppic']);
+    Route::put('/user/updatepwrd/{id}', ['App\Http\Controllers\UserController', 'updatepwrd']);
+    Route::get('/user/ref/downlines', ['App\Http\Controllers\UserController', 'viewdownlines']);
+
+    // Invests
+    Route::get('/user/invests', ['App\Http\Controllers\UserController', 'invests']);
+    Route::get('/user/invests/buy', ['App\Http\Controllers\UserController', 'buy_plan']);
+    Route::post('/user/invests/buy_invest/{id}', ['App\Http\Controllers\UserController', 'buy_invest']);
+    Route::get('/user/invests/preview/{id}', ['App\Http\Controllers\UserController', 'buy_preview']);
+
+
+    // Deposit
+    Route::get('/user/deposit', ['App\Http\Controllers\PaymentController', 'deposit'])->name('deposit');
+    Route::post('/user/deposit/confirm', ['App\Http\Controllers\PaymentController', 'depositconfirm'])->name('deposit.confirm');
+    Route::get('/user/deposit/history', ['App\Http\Controllers\PaymentController', 'deposithistory'])->name('deposit.history');
+
+    // Withdraw
+    Route::get('/user/withdraw', ['App\Http\Controllers\WithdrawController', 'withdraw']);
+    Route::get('/user/withdraw_history', ['App\Http\Controllers\WithdrawController', 'withdraw_history']);
+    Route::post('/user/request_withdraw', ['App\Http\Controllers\WithdrawController', 'request_withdraw']);
+
+    // Demo Trade
+    Route::get('/user/demo_trade/{id}', ['App\Http\Controllers\TradeController', 'demo_trade']);
+    Route::get('/user/demo_history', ['App\Http\Controllers\TradeController', 'demo_history']);
+
+    Route::get('/user/dtrade', ['App\Http\Controllers\TradeController', 'trade'])->name('trade');
+    Route::get('/user/dtrade_history', ['App\Http\Controllers\TradeController', 'trade_history']);
+    Route::post('/user/trade/dcommit/{id}', ['App\Http\Controllers\TradeController', 'dcommit']);
+
+    // Live Trade
+    Route::get('/user/trade', ['App\Http\Controllers\TradeController', 'trade'])->name('trade');
+    Route::get('/user/trade_history', ['App\Http\Controllers\TradeController', 'trade_history']);
+    Route::get('/user/trade/asset/{id}', ['App\Http\Controllers\TradeController', 'tradenow']);
+    Route::post('/user/trade/commit/{id}', ['App\Http\Controllers\TradeController', 'commit']);
+
+    // Transaction log
+    Route::get('/user/transaction_log', ['App\Http\Controllers\TradeController', 'transaction_log']);
+    Route::post('/user/transaction/history/create/{id}', ['App\Http\Controllers\TradeController', 'transactionhistorycreate']);
+    Route::post('/user/transaction/history/dcreate/{id}', ['App\Http\Controllers\TradeController', 'dtransactionhistorycreate']);
+});
 
 //  <------------------- End User Routes ----------------->
 
