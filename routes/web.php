@@ -27,7 +27,7 @@ use App\Models\User;
 // <--------------- Front pages ----------------->
 //Lang route for un-auth routes
 
-return;
+
 Route::get('/lang/{lang}', [LocalizationController::class, 'setLocale'])->name('setUserLocaleUnAuth');
 Route::get('/', ['App\Http\Controllers\FrontController', 'home']);
 Route::get('/contact', ['App\Http\Controllers\FrontController', 'contact']);
