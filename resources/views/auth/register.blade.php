@@ -121,8 +121,8 @@
                                         <img class="uk-margin-small-right in-offset-top-20" src="{{asset('front/img/logo-2.png')}}" data-src="{{asset('front/img/logo.png')}}" alt="logo" width="150" height="50">
                                     </a>
                                     <!-- module logo begin -->
-                                    <p class="uk-text-lead uk-margin-top uk-margin-remove-bottom">Create an account</p>
-                                    <p class="uk-text-small uk-margin-remove-top uk-margin-medium-bottom"> Already have an account? <a href="{{ route('login') }}">Login here</a></p>
+                                    <p class="uk-text-lead uk-margin-top uk-margin-remove-bottom">@lang('text.createAccount')</p>
+                                    <p class="uk-text-small uk-margin-remove-top uk-margin-medium-bottom">@lang('text.alreadyHaveAcc') <a href="{{ route('login') }}">@lang('text.loginHere')</a></p>
                                        
                                     @if (count($errors) > 0)
                                              <div class="text-center">
@@ -139,32 +139,32 @@
                                     <form class="uk-grid uk-form" method="POST" action="{{ route('register') }}"> 
                                         @csrf
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
-                                            <label for="firstname"> Firstname: </label>
+                                            <label for="firstname"> @lang('text.firstName') </label>
                                             <input id="firstname" class="uk-input uk-border-rounded" type="text" name="firstname" :value="old('firstname')" required autofocus autocomplete="firstname" />
                                         </div> 
                                         
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
-                                            <label for="lastname"> Lastname: </label>
+                                            <label for="lastname"> @lang('text.lastName') </label>
                                             <input id="lastname" class="uk-input uk-border-rounded" type="text" name="lastname" :value="old('lastname')" required autofocus autocomplete="lastname" />
                                         </div>
 
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
-                                            <label for="username"> Username: </label>
+                                            <label for="username"> @lang('text.username') </label>
                                             <input id="username" class="uk-input uk-border-rounded" type="text" name="username" :value="old('username')" required autofocus autocomplete="username" />
                                         </div>
 
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
-                                            <label for="email"> Email: </label>
+                                            <label for="email"> @lang('text.email') </label>
                                             <input id="email" class="uk-input uk-border-rounded" type="email" name="email" :value="old('email')" required />
                                         </div>
                                         
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
-                                            <label for="phone"> Phone: </label>
+                                            <label for="phone"> @lang('text.phone') </label>
                                             <input id="phone" class="uk-input uk-border-rounded" type="text" name="phone" :value="old('phone')" required autofocus autocomplete="phone" />
                                         </div>
                                         
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
-                                            <label for="country"> Country: </label>
+                                            <label for="country"> @lang('text.country') </label>
                                             <select name="country" id="country" class="uk-input uk-border-rounded"  required autofocus autocomplete="country">
                                                 <option value="">Select Country</option>
                                                 @foreach ($countires as $country)
@@ -174,24 +174,24 @@
                                         </div>
                                         
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
-                                            <label for="password"> Password </label>
+                                            <label for="password"> @lang('text.password') </label>
                                             <input id="password" class="uk-input uk-border-rounded" type="password" name="password" required autocomplete="new-password" />
                                         </div>
                             
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
-                                            <label for="password_confirmation"> Confirm Password </label>
+                                            <label for="password_confirmation"> @lang('text.password') </label>
                                             <input id="password_confirmation" class="uk-input uk-border-rounded" type="password" name="password_confirmation" required autocomplete="new-password" />
                                         </div>
 
                                         <div class="uk-margin-small uk-width-auto uk-text-small">
-                                            <label><input class="uk-checkbox uk-border-rounded" type="checkbox"  id="remember_me" name="remember" /> I Agree </label>
+                                            <label><input class="uk-checkbox uk-border-rounded" type="checkbox"  id="remember_me" name="remember" /> @lang('text.iAgree')</label>
                                         </div>
 
                                         <div class="uk-margin-small uk-width-expand uk-text-small">
-                                            <label class="uk-align-right"><a class="uk-link-reset" href="{{ url('terms') }}">Terms and Conditions </a></label>
+                                            <label class="uk-align-right"><a class="uk-link-reset" href="{{ url('terms') }}">@lang('text.termsAndCond') </a></label>
                                         </div>
                                         <div class="uk-margin-small uk-width-1-1">
-                                            <button class="uk-button uk-width-1-1 uk-button-primary uk-border-rounded uk-float-left" type="submit" name="submit">Sign up</button>
+                                            <button class="uk-button uk-width-1-1 uk-button-primary uk-border-rounded uk-float-left" type="submit" name="submit">@lang('text.signUp')</button>
                                         </div>
                                     </form>
                                     <!-- login form end -->

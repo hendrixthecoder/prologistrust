@@ -124,7 +124,7 @@
                                     </a>
                                     <!-- module logo begin -->
                                     <p class="uk-text-lead uk-margin-top uk-margin-remove-bottom">@lang('text.loginAccount')</p>
-                                    <p class="uk-text-small uk-margin-remove-top uk-margin-medium-bottom"> Don't have an account? <a href="{{ route('register') }}">Register here</a></p>
+                                    <p class="uk-text-small uk-margin-remove-top uk-margin-medium-bottom"> @lang('text.dontHaveAcc') <a href="{{ route('register') }}">@lang('text.registerHere')</a></p>
                                   
                                        
                                     @if (count($errors) > 0)
@@ -144,21 +144,21 @@
                                     <form class="uk-grid uk-form" method="POST" action="{{ route('login') }}"> 
                                         @csrf
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
-                                            <label for="email"> Email: </label>
-                                            <input class="uk-input uk-border-rounded" type="email" name="email" :value="old('email')" placeholder="Email Address" required autofocus />
+                                            <label for="email"> @lang('text.email') </label>
+                                            <input class="uk-input uk-border-rounded" type="email" name="email" :value="old('email')" placeholder="" required autofocus />
                                         </div>
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
-                                            <label for="password"> Password: </label>
-                                            <input class="uk-input uk-border-rounded" placeholder="Password" id="password"  type="password" name="password" required autocomplete="current-password" />
+                                            <label for="password"> @lang('text.password') </label>
+                                            <input class="uk-input uk-border-rounded" placeholder="" id="password"  type="password" name="password" required autocomplete="current-password" />
                                         </div>
                                         <div class="uk-margin-small uk-width-auto uk-text-small">
-                                            <label><input class="uk-checkbox uk-border-rounded" type="checkbox"  id="remember_me" name="remember" /> Remember me</label>
+                                            <label><input class="uk-checkbox uk-border-rounded" type="checkbox"  id="remember_me" name="remember" /> @lang('text.rememberMe')</label>
                                         </div>
                                         <div class="uk-margin-small uk-width-expand uk-text-small">
-                                            <label class="uk-align-right"><a class="uk-link-reset" href="{{ route('password.request') }}">Forgot password?</a></label>
+                                            <label class="uk-align-right"><a class="uk-link-reset" href="{{ route('password.request') }}">@lang('text.forgotPass')</a></label>
                                         </div>
                                         <div class="uk-margin-small uk-width-1-1">
-                                            <button class="uk-button uk-width-1-1 uk-button-primary uk-border-rounded uk-float-left" type="submit" name="submit">Sign in</button>
+                                            <button class="uk-button uk-width-1-1 uk-button-primary uk-border-rounded uk-float-left" type="submit" name="submit">@lang('text.signIn')</button>
                                         </div>
                                     </form>
                                     <!-- login form end -->

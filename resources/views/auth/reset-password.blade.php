@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#c3c3c3" />
     <!-- Site Properties -->
-    <title> Reset Password | Prologis Trust </title>
+    <title> @lang('text.resetPass') | Prologis Trust </title>
     <!-- Critical preload -->
     <link rel="preload" href="{{asset('front/js/vendors/uikit.min.js')}}" as="script">
     <link rel="preload" href="{{asset('front/css/vendors/uikit.min.css')}}" as="style">
@@ -57,19 +57,19 @@
                                         @csrf
                                         <input type="hidden" name="token" value="{{ $request->route('token') }}">
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
-                                            <label for="email"> Email: </label>
+                                            <label for="email"> @lang('text.email') </label>
                                             <input class="uk-input uk-border-rounded" type="email" name="email" :value="old('email')"  required autofocus />
                                         </div>
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
-                                            <label for="password"> Password: </label>
+                                            <label for="password"> @lang('text.password') </label>
                                             <input class="uk-input uk-border-rounded" type="password" name="password" id="password" required />
                                         </div>
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
-                                            <label for="password_confirmation"> Confirm password: </label>
+                                            <label for="password_confirmation"> @lang('text.confPass'): </label>
                                             <input class="uk-input uk-border-rounded" type="password" name="password_confirmation" id="password_confirmation" required />
                                         </div>
                                         <div class="uk-margin-small uk-width-1-1">
-                                            <button class="uk-button uk-width-1-1 uk-button-primary uk-border-rounded uk-float-left" type="submit">Reset Password</button>
+                                            <button class="uk-button uk-width-1-1 uk-button-primary uk-border-rounded uk-float-left" type="submit">@lang('text.resetPass')</button>
                                         </div>
                                     </form>
                                 </div>

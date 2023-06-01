@@ -1,7 +1,7 @@
 @extends('Layouts.home')
 
 @section('title')
-	Contact
+	@lang('text.contact')
 @endsection
 
 @section('content')
@@ -31,8 +31,8 @@
 				<div class="col-md-12">
 					<div class="title-wrap text-center">
 						<div class="back-title">contact</div>
-						<h3>Always ready to listen</h3>
-						<p>We would love to hear from you.</p>
+						<h3>@lang('text.alwaysReadyListen')</h3>
+						<p>@lang('text.loveToHear')</p>
 					</div>
 				</div>
 			</div>	
@@ -43,21 +43,21 @@
 					<div class="contact-det text-center">
 						
 					<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#187770" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-						<h6>Phone</h6>
+						<h6>@lang('text.phone')</h6>
 						<p>+54 12 346 7826</p>
 					</div>
 				</div>
 				<div class="col-md-3 mt-4 mt-md-0">
 					<div class="contact-det text-center">
 					<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#187770" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-						<h6>Email</h6>
+						<h6>@lang('text.email')</h6>
 						<p>info@prologistrust.com</p>
 					</div>
 				</div>
 				<div class="col-md-3 mt-4 mt-md-0">
 					<div class="contact-det text-center">
 					<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#187770" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-						<h6>Address</h6>
+						<h6>@lang('text.addressLoc')</h6>
 						<p>CHICAGO IL, USA</p>
 					</div>
 				</div>
@@ -74,7 +74,7 @@
 					<div class="row justify-content-center">
 						<div class="col-md-8">
 							<div class="text-center">
-								<input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your name *" required="required" data-error="Name is required.">
+								<input id="form_name" type="text" name="name" class="form-control" placeholder="{{ __('text.enterName') }}" required="required" data-error="Name is required.">
 								<div class="help-block with-errors"></div>
 							</div>
 						</div>
@@ -82,13 +82,13 @@
 					<div class="row justify-content-center">
 						<div class="col-md-4 mt-3">
 							<div class="form-group text-center">
-								<input id="form_email" type="email" name="email" class="form-control text-center" placeholder="Enter your email *" required="required" data-error="Valid email is required.">
+								<input id="form_email" type="email" name="email" class="form-control text-center" placeholder="{{ __('text.enterEmail') }}" required="required" data-error="Valid email is required.">
 								<div class="help-block with-errors"></div>
 							</div>
 						</div>
 						<div class="col-md-4 mt-3">
 							<div class="form-group text-center">
-								<input id="form_phone" type="tel" name="phone" class="form-control text-center" placeholder="Enter your phone">
+								<input id="form_phone" type="tel" name="phone" class="form-control text-center" placeholder="{{ __('text.enterPhone') }}">
 								<div class="help-block with-errors"></div>
 							</div>
 						</div>
@@ -96,19 +96,19 @@
 					<div class="row justify-content-center">
 						<div class="col-md-8 mt-3">
 							<div class="form-group text-center">
-								<textarea id="form_message" name="message" class="form-control text-center" placeholder="Your message *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+								<textarea id="form_message" name="message" class="form-control text-center" placeholder="{{ __('text.yourMessage') }}" rows="4" required="required" data-error="Please,leave us a message."></textarea>
 								<div class="help-block with-errors textarea-error"></div>
 							</div>
 						</div>
 						@if (session()->has('success'))
 						<div class="col-md-8 mt-3 alert alert-success text-center">
-								Your Message was sent successfully.
-								<br>
-								We will respond as soon as possible.
+							Your Message was sent successfully.
+							<br>
+							We will respond as soon as possible.
 						</div>
 						@endif
 						<div class="col-md-8 mt-3 text-center">
-							<input type="submit" class="btn btn-primary btn-send text-center" value="Send message">
+							<input type="submit" class="btn btn-primary btn-send text-center" value="{{ __('text.sendMessage') }}">
 						</div>
 					</div>
 					

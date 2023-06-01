@@ -34,20 +34,20 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="title-wrap text-center">
-						<div class="back-title">ABOUT US</div>
+						<div class="back-title">@lang('text.aboutUs')</div>
                     </div>
 				</div>
 
                 <div class="col-md-12">
                     <div class="title-spread text-center">
-                        <h3>Who we are ?</h3>
-						<p> The technology developed by prologistrust allows us to study the evolution of the main prologis assets and their price in different currencies and operate in the market using advanced algorithms. After years of research, we have optimized the system to obtain maximum profitability. Real-time monitoring and analysis of the prologis real estate stock assets and their price in different currencies Al algorithms developed to find the best opportunities Continuaus optimization and adaptation of the platform. </p>
-                        <p> We have our own expert real estate agents which is proving to be very effective. a development team that updates the system to look for new opportunities. The greatest transparency in operations ever offered by an arbitrage company. A payment gateway that allows the instant withdrawal of profits and commissions, once accumulated $15 u.s. dollar. A perfect commission plan for those looking for a business opportunity. </p>
+                        <h3>@lang('text.whoWeAreQues')</h3>
+						<p>@lang('text.whoWeAreFirst')</p>
+                        <p>@lang('text.whoWeAreSec')</p>
 				        
                         <br>
 
-                        <h3> Our Mission</h3>
-						<p><strong>Prologistrust Mission Statement:</strong> We strive to be exemplary corporate citizens, minimize our environmental impacts, and maximize beneficial outcomes for our stakeholders. </p>
+                        <h3>@lang('text.ourMission')</h3>
+						<p>@lang('text.prolState')</p>
                    
                     </div>
                 </div>
@@ -62,16 +62,15 @@
 						<div class="mb-4">
 						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#187770" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
 						</div>
-						<h5>Benefits of Investing and Trading with PROLOGISTRUST</h5>
-						<p>When you trade and invest in prologistrust, you are dealing with the prologis stock market.</p>
+						<h5>@lang('text.benefitsProl')</h5>
+						<p>@lang('text.whenTradeProl')</p>
                        
                         <ul class="app-list mb-5 mt-4 text-left">
-                            <li> prologis day-to-day transaction </li>
-                            <li>  buying and selling of land and properties </li>
-                            <li> the rise and fall of prologis stock/ holding and selling shares. </li>
-                            <li> building and renting of apartment by your real estate agent. </li>
-                           <li> daily compensation from the prologis warehouses and event centres, airport, E.TC... </li>
-
+                            <li>@lang('text.benefitsOne')</li>
+                            <li>@lang('text.benefitsTwo')</li>
+                            <li>@lang('text.benefitsThree')</li>
+                            <li>@lang('text.benefitsFour')</li>
+                           <li>@lang('text.benefitsFive')</li>
                          </ul>
 					</div>
 				</div>
@@ -81,8 +80,8 @@
 						<div class="mb-4">
 						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#187770" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
 						</div>
-						<h5>How does Stock Trading work ?</h5>
-						<p> Prologistrust Stock trading is the buying and selling of a company’s shares with an aim to make a profit. When you buy shares in the company you own a small part of that company, and the value of your investment will change as the company’s share price moves up and down. </p>
+						<h5>@lang('text.howTradeWorks')</h5>
+						<p>@lang('text.howTradeWorksText')</p>
 					</div>
 				</div>
 
@@ -91,9 +90,9 @@
 						<div class="mb-4">
 						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#187770" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
 						</div>
-						<h5>Ways to Predict and Analyse the Prologis Stock ?</h5>
-						<p>Investors make  information including the prologis company news and announcements, company results (earnings), and technical analysis to make decisions about which stocks to buy and when.</p>
-                        <p>Once you’ve bought your investment you can log in anytime to monitor it and check the latest news and announcements. There’s no limit on how long you can hold your investment, and when you’re ready to sell simply login and click to sell instantly. You could then  that cash to make a new investment or return it to your bank account.</p>
+						<h5>@lang('text.waysToPredict')</h5>
+						<p>@lang('text.waysOne')</p>
+                        <p>@lang('text.waysTwo')</p>
 					</div>
 				</div>
 
@@ -108,8 +107,8 @@
 
                     <div class="col-md-12">
                         <div class="title-spread text-center">
-                            <h3> PROLOGISTRUST Investment Agents Analysis </h3>
-                            <p> Investment agents often used analyze changes in the prologis stock market by monitoring figures, such as interest rates, unemployment rates, gross domestic product (GDP), and other types of economic data that come out of prologis. For example, a agent conducting a fundamental analysis of the EUR/USD currency pair would find information on the interest rates in the Eurozone more useful than those in the U.S. Those agents would also want to be on top of any significant news releases coming out of each prologis transaction to gauge the relation to the health of their client or investor and each star agent put more effort than the other. Giving you a perfect daily return an increase in your finance.</p>
+                            <h3>@lang('text.invAgentAnalysis')</h3>
+                            <p>@lang('text.invAgentText')</p>
                         </div>
                     </div>
 				

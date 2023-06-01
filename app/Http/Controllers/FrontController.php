@@ -34,7 +34,7 @@ class FrontController extends Controller
             'name' => $request->input('name') , 
             'email' => $request->input('email'), 
             'phone' => $request->input('phone')
-    );
+        );
        
         Mail::to('info@prologistrust.com')
         ->send(new \App\Mail\ContactMail($details))

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#c3c3c3" />
     <!-- Site Properties -->
-    <title> Confirm Password | Prologis Trust </title>
+    <title> @lang('text.confPass') | Prologis Trust </title>
     <!-- Critical preload -->
     <link rel="preload" href="{{asset('front/js/vendors/uikit.min.js')}}" as="script">
     <link rel="preload" href="{{asset('front/css/vendors/uikit.min.css')}}" as="style">
@@ -62,7 +62,7 @@
                                     <form class="uk-grid uk-form" method="POST" action="{{ route('password.confirm') }}"> 
                                         @csrf
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
-                                            <label for="password"> Password: </label>
+                                            <label for="password"> @lang('text.password') </label>
                                             <input class="uk-input uk-border-rounded" type="password" name="password" id="password" required autofocus />
                                         </div>
                                         <div class="uk-margin-small uk-width-1-1">

@@ -54,7 +54,7 @@
                                         <img class="uk-margin-small-right in-offset-top-10" src="{{asset('front/img/logo-2.png')}}" data-src="{{asset('front/img/logo.png')}}" alt="logo" width="150" height="50">
                                     </a>
                                     <!-- module logo begin -->
-                                    <p class="uk-margin-top uk-margin-remove-bottom">Forgot your password? No problem. Enter email to get a reset link.</p>
+                                    <p class="uk-margin-top uk-margin-remove-bottom">@lang('text.forgotPassNoProb')</p>
                                     
                                     <br>
 
@@ -67,11 +67,11 @@
                                     <form class="uk-grid uk-form" method="POST" action="{{ route('password.email') }}"> 
                                         @csrf
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
-                                            <label for="email"> Email: </label>
-                                            <input class="uk-input uk-border-rounded" type="email" name="email" :value="old('email')" placeholder="Email Address" required autofocus />
+                                            <label for="email"> @lang('text.email') </label>
+                                            <input class="uk-input uk-border-rounded" type="email" name="email" :value="old('email')" placeholder="" required autofocus />
                                         </div>
                                         <div class="uk-margin-small uk-width-1-1">
-                                            <button class="uk-button uk-width-1-1 uk-button-primary uk-border-rounded uk-float-left" type="submit">Email Password Reset Link</button>
+                                            <button class="uk-button uk-width-1-1 uk-button-primary uk-border-rounded uk-float-left" type="submit">@lang('text.emailPassResLink')</button>
                                         </div>
                                     </form>
                                    
