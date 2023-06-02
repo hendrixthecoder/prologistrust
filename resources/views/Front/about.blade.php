@@ -23,7 +23,7 @@
 
 		<div class="col-md-12">
 			<div class="text-center">
-				<h3> {{ __($page_title) }}</h3>
+				<h3>@lang('text.aboutUs')</h3>
 			</div>
 		</div>
 		
