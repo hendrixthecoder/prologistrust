@@ -16,6 +16,7 @@ class CreateWithdrawsTable extends Migration
         Schema::create('withdraws', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->date('date');
+            $table->string('user_id');
             $table->string('trx_id')->nullable();
             $table->string('username')->nullable();
             $table->string('method')->nullable();

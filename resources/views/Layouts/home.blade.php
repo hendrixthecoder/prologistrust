@@ -54,11 +54,14 @@
         }
     </script> --}}
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<body>
-
-    <!-- Loader -->
-
+    
+    <body>
+        
+        <!-- Loader -->
+        
+    {{-- <div id="translator">
+        wercwerc
+    </div> --}}
 
     <!-- Nav and Logo
 	================================================== -->
@@ -66,10 +69,12 @@
 
     @yield('content')
 
+
     <!-- Footer -->
     @include('Includes.home.footer')
 
     <div class="scroll-to-top">to top</div>
+
 
 
 
@@ -126,6 +131,13 @@
         });
     </script>
 	@yield('scripts')
+    <style>
+        #translator {
+            position: sticky;
+            bottom: 10;
+            left: 5;
+        }
+    </style>
 
 <!-- End Document
 ================================================== -->

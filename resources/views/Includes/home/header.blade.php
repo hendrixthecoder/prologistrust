@@ -31,14 +31,18 @@
                                 <a class="nav-link" href="{{url('/register')}}">@lang('text.register')</a>
                             </li>
                             <li class="nav-item" id="ref">
-                                <span class="nav-link">{{ Config::get('languages')[App::getLocale()] }}</span>
+                                <div style="display: flex; align-items: center">
+                                    <x-dynamic-component component="flag-language-{{ App::getLocale() }}" class="flags" style="margin-top: 15px; margin-right: 5px; width: 15px; height:15px;"  />
+                                    <span class="flags nav-link" >{{ Config::get('languages')[App::getLocale()] }}</span>
+                                </div>
                                 <ul class="collapse submenu list-unstyled" id="languages" data-parent="#accordionExample" style="display: none">
                                     @foreach (Config::get('languages') as $lang => $language)
-                                    @if ($lang != App::getLocale())
-                                        <li>
-                                            <a href="{{ route('setUserLocaleUnAuth', $lang) }}">{{ $language }}</a>
-                                        </li>
-                                    @endif
+                                        @if ($lang != App::getLocale())
+                                            <li class="" style="display: flex; gap: 10px">
+                                                <x-dynamic-component component="flag-language-{{ $lang }}" class="flags" style="align-self: center" />
+                                                <a style="align-self: center" href="{{ route('setUserLocaleUnAuth', $lang) }}">{{ $language }}</a>
+                                            </li>
+                                        @endif
                                     @endforeach
                                 </ul>
                             </li>
@@ -54,6 +58,12 @@
     .nav-link {
         color:black;
     }
+
+    .flags {
+        width: 15px;
+        height: 15px;
+    }
+
 
 </style>
 
