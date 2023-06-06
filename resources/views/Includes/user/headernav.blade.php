@@ -12,7 +12,6 @@
 				<a href="{{url('/')}}" class="nav-link"> Prologis<span style="font-size:14px;color:#1d958d;"><sup>trust<sup></span></a>
 			</li>
 		</ul>
-    <div id="google_translate_element"></div>
 		<ul class="navbar-item flex-row ml-md-auto">
 
 			<li class="nav-item dropdown user-profile-dropdown">
